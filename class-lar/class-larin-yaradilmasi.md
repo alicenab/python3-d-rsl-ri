@@ -3,7 +3,8 @@
 Nəyə görə class-ları işlədirik? Class-lar bizə data və funksiyaları məntiqi şəkildə qruplaşdırmağa imkan verir. Mən onları müvafiq olaraq attribute və method adlandıracağam. 
 
 Method - class içində təyin etdiyimiz funksiyalar method adlanır.  
-Attribute - classa aid olan dəyişənlər attribute adlanır.
+Attribute - classa aid olan dəyişənlər attribute adlanır  
+Instance - class-dan törəyən object
 
 Tutaq ki, şirkətdəki işçiləri əks etdirən bir tətbiq yazmalıyıq. Hər işçinin adı, emaili və görə bildiyi işlər var. Hər işçini ayrı ayrı kodlamaq həm kod sətiri həm də vaxt baxımından əziyyət olardı. Buna görə işçi adında bir qəlib yaradıb, hər işçini o qəlibə uyğun kodlamaq daha sərfəlidir. Bu halda hər bir işçinin öz methodu və attribute-u olacaq.
 
