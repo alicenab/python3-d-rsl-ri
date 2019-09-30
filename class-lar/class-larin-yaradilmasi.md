@@ -26,8 +26,9 @@ Yuxarıdaki misalda Işçi üçün class yaratmışdıq. Hər işçini bu qəlib
 ```python
 class Ishci:
     pass
-    
-ishci_1 = Ishci() # Burada ishci_1 ve ishci_2 instance-lardir.
+
+# Burada ishci_1 ve ishci_2 Ishci class-inin instance-lardir.
+ishci_1 = Ishci() 
 ishci_2 = Ishci()
 
 print(ishci_1) # <__main__.ishci object at 0x1013775f8>
