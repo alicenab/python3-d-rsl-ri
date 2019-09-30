@@ -45,7 +45,7 @@ Gəlin `ishci_1` və `ishci_2` yə bəzi instance dəyişənləri təyin edək.
 
  
 
-```text
+```python
 class Ishci:
     pass
     
