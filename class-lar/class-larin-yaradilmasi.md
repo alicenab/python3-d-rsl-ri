@@ -111,7 +111,7 @@ print('{} {}'.format(ishci_1.iad, ishci_1.isoyad) # Ali Mammadzada
 print('{} {}'.format(ishci_1.iad, ishci_2.isoyad) # Serxan Ismayilov
 ```
 
-Ancaq hər dəfə işçinin tam adı lazım olduqca yuxarıdaki kodun 11-12-ci sətirlərindəki kimi uzun kod yazmaq çətin olacaq. Bu problemi həll etmək üçün Ishci class-ının içində bir method yazmaq mümkündür. 
+Ancaq hər dəfə işçinin tam adı lazım olduqca yuxarıdaki kodun 11-12-ci sətirlərindəki kimi uzun kod yazmaq çətin olacaq. Bu problemi həll etmək üçün Ishci class-ının içində bir method yazmaq mümkündür. Ancaq `__init__` methodu əvvəl işləyib attribute-ları təyin etdiyi üçün, artıq yeni method-da ad, soyad, maas yazmaq lazım deyil.
 
 {% hint style="info" %}
 `iad` `isoyad` `imaas` `iemail` məsələsini anladığınıza görə, normal qaydada təyin edirəm.
