@@ -24,14 +24,14 @@ class Ishci:
     def tamAd(self):
         return '{} {}'.format(self.ad, self.soyad)
         
-    def maas_artimi():
+    def maas_artimi(self):
         self.pay = int(self.pay * artma_miqdari)
         
 ishci_1 = Ishci('Ali', 'Mammadzada', 50000)
 ishci_2 = Ishci('Serxan', 'Ismayilov', 60000)
 ```
 
-Əvvəlki bölmədə yazdığım koda, 3-cü, 14-15-ci sətirləri əlavə etdim. Riyazi baxımdan bir dəyəri 12 faiz artırmağın yolu həmin dəyəri 1.12-yə vurmaqdır. Həmin dəyərin bizə axırda `int` dəyərində geri dönməsi üçün bütün hesablamanı `int()` içinə aldım.
+Əvvəlki bölmədə yazdığım koda, 3-cü, 14-15-ci sətirləri əlavə etdim. Riyazi baxımdan bir dəyəri 12 faiz artırmağın yolu həmin dəyəri 1.12-yə vurmaqdır. Həmin dəyərin bizə axırda `int` dəyərində geri dönməsi üçün bütün hesablamanı `int()` içinə aldım. Real mühitdə belə etməyin. Bu pis nəticələrə yol aça bilər.
 
 Ancaq maraqlısı budur ki, yuxarıdaki kodu çalışdırdıqda python xəta verir:
 
@@ -70,11 +70,9 @@ print(ishci_2.artma_miqdari)  # 1.12
 
 `ishci_1` instance-ının özünün `artma_miqdari` adında attributu yoxdur. Ancaq `self` vasitəsi ilə o hansı class-a aid olduğunu bilir. Buna görə də özünün aid olduğu class-ın içindəki attributları axtarmağa başlıyır və `artma_miqdari`-nin `1.12`yə bərabər olduğunu görür.
 
-Sizi maraqlı bir halla tanış etmək istəyirəm. Əgər siz `ishci_1.artma_miqdari = 1.15` desəniz, məntiqi olaraq `ishci_1`-in aid olduğu  class atributunun \(yəni `Ishci.maas_artimi`-nin da dəyişməsini gözləyərdiniz elə deyil?
+Sizi maraqlı bir halla tanış etmək istəyirəm. Əgər siz `ishci_1.artma_miqdari = 1.15` desəniz, məntiqi olaraq `ishci_1`-in aid olduğu  class atributunun \(yəni `Ishci.artma_miqdari`-nin da dəyişməsini gözləyərdiniz elə deyil?
 
-
-
-Ancaq python belə işləmir. Əgər siz `ishci_1.artim_miqdari`-ni `1.15` etsəniz, bu zaman python özü `ishci_1` instance-ında `artim_miqdari` adında əvvəl mövcud olmayan attribute yaradır. 
+Ancaq python3 belə işləmir. Əgər siz `ishci_1.artim_miqdari`-ni `1.15` etsəniz, bu zaman python özü `ishci_1` instance-ında `artim_miqdari` adında əvvəl mövcud olmayan attribute yaradır. 
 
 ```python
 class Ishci:
@@ -90,7 +88,7 @@ class Ishci:
     def tamAd(self):
         return '{} {}'.format(self.ad, self.soyad)
         
-    def maas_artimi():
+    def maas_artimi(self):
         self.maas = int(self.maas * self.artma_miqdari)
         
 ishci_1 = Ishci('Ali', 'Mammadzada', 50000)
