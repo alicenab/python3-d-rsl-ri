@@ -4,7 +4,7 @@ description: Class dəyişənləri nədir?
 
 # Class dəyişənləri
 
-Class dəyişənləri, class-ın aid olduğu bütün instance-lar üzrə paylanan dəyişənlərə deyilir.
+Class dəyişənləri, class-ın aid olduğu bütün instance-lar üzrə işlədilə bilən dəyişənlərə deyilir.
 
 İnstance dəyişənləri hər instance üçün müxtəlif idi. Ancaq Class dəyişənləri hər instance üçün eynidir.
 
@@ -25,7 +25,7 @@ class Ishci:
         return '{} {}'.format(self.ad, self.soyad)
         
     def maas_artimi(self):
-        self.pay = int(self.pay * artma_miqdari)
+        self.maas = int(self.maas * artma_miqdari)
         
 ishci_1 = Ishci('Ali', 'Mammadzada', 50000)
 ishci_2 = Ishci('Serxan', 'Ismayilov', 60000)
@@ -107,5 +107,5 @@ print(ishci_1.__dict__)
 # {'artma_miqdari': 1.15, 'ad': 'Ali', 'soyad': 'Mammadzada', 'maas': 50000}
 ```
 
-Nümunədən də gördüyünüz kimi, əvvəl  `ishci_1`-in `namespace`-ində `artma_miqdari` yox idi. Ancaq sonradan yarandı. Əgər yuxarıdaki kodun 15-ci sətrində `self.maas_artimi` yox `Ishci.maas_artimi` yazsaydıq, onda `ishci_1`ə etdiyimiz dəyişiklik bütün `Ishci` class-ına tətbiq ediləcəkdi.
+Nümunədən də gördüyünüz kimi, əvvəl  `ishci_1`-in `namespace`-ində `artma_miqdari` yox idi. Ancaq sonradan yarandı. 
 

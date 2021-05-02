@@ -1,6 +1,6 @@
 # Mathod-lar\(regular, class, static\)
 
-Bundan əvvəlki dərsimizdə ən son bu səviyyədə qalmışdıq, gəlin davam edək.
+Bundan əvvəlki dərsimizdə ən son bu səviyyədə qalmışdıq, gəlin davam edək. t
 
 ```python
 class Ishci:

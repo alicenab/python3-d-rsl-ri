@@ -57,16 +57,16 @@ print(ishci_2) # <__main__.ishci object at 0x101377668>
 
 ishci_1.ad = 'Ali'
 ishci_1.soyad = 'Mammadzada'
-ishci_1.email = 'ali.mammadzada@email.com'
+ishci_1.email = 'Ali.Mammadzada@email.com'
 ishci_1.maas = 50000
 
-ishci_2.ad = 'Serxan'
+ishci_2.ad = 'Sarkhan'
 ishci_2.soyad = 'Ismayilov'
-ishci_2.email = 'serxan.ismayilov@email.com'
+ishci_2.email = 'Sarkhan.Ismayilov@email.com'
 ishci_2.maas = 60000
 
-print(ishci_1) # ali@example.com
-print(ishci_2) # serxan@example.com
+print(ishci_1.email) # ali.mammadzada@email.com
+print(ishci_2.email) # sarkhan.ismayilov@email.com
 ```
 
 İki işçinin informasiyasını əl vasitəsi ilə daxil etmək çətin və uzun olur, hər dəfə instance yaradılanda bu məlumatın avtomatik daxil olunmasını təmin etmək gözəl fikir olardı. Bunun üçün əsas class-ımızın içində `__init__` method-unu istifadə etməliyik.
@@ -132,8 +132,8 @@ class Ishci:
 ishci_1 = Ishci('Ali', 'Mammadzada', 50000)
 ishci_2 = Ishci('Serxan', 'Ismayilov', 60000)
 
-print(ishci_1.tamAd())
-print(ishci_2.tamAd()) 
+print(ishci_1.tamAd()) # Ali Mammadzada
+print(ishci_2.tamAd()) # Serxan Ismayilov
 ```
 
  8-ci sətiri belə fikirləşin 
