@@ -144,15 +144,15 @@ print(emp_2.fullname()) # Mammad2 Mammadov2
 
 Əgər yuxarıdakı nümunədəki kimi siz `self`-i yazmadan instance yaratmağa çalışsanız, Həmin dəyəri print edərkən Python sizə TypeError verəcək:
 
-`tamAd() takes 0 positional arguments but 1 was given`
+`fullname() takes 0 positional arguments but 1 was given`
 
-Axı biz `tamAd()` method-unda nə `self` arqumentini nə də başqa bir argumenti təyin etməmişik? necə olur ki errorda deyir `1 was given`? 
+Axı biz `fullname()` method-unda nə `self` arqumentini nə də başqa bir argumenti təyin etməmişik? necə olur ki errorda deyir `1 was given`? 
 
 Bu ona görədir ki, class-ın içində bir method yazığımızda, həmin method biz yazsaq da yazmasaq da avtomatik olaraq instance-ı ilk arqument kimi qəbul edir.  
 
-Yəni `print(ishci_1.tamAd())` yazdığımızda, `ishci_1` dəyərini avtomatik olaraq `tamAd(ishci_1)` -a atır. Ona görə də `self` yazmaq mütləqdir.
+Yəni `print(emp_1.fullname())` yazdığımızda, `emp_1` dəyərini avtomatik olaraq `fullname(emp_1)` -a atır. Ona görə də `self` yazmaq mütləqdir.
 
-Başqa bir deyişlə, `ishci_1.tamAd()` yazdığımızda, python yazdığımızı `Ishci.tamAd(ishci_1)` -ə çevirir. `ishci_1`-i isə `self`ə class-ın içindəki method-da self yazmadığımızda  Aşağıdaki erroru verir:`tamAd() takes 0 positional arguments but 1 was given`
+Başqa bir deyişlə, `emp_1.fullname()` yazdığımızda, python yazdığımızı `Employee.fullname(emp_1)` -ə çevirir. `emp_1`-i isə `self`ə class-ın içindəki method-da self yazmadığımızda  Aşağıdaki erroru verir:`fullname() takes 0 positional arguments but 1 was given`
 
 {% hint style="info" %}
 `self` class içindəki method içindəki bir  argument-dir, `self` bir keyword deyil. Siz başqa bir ad da istifadə edə bilərsiniz. Ancaq kodun oxunabilirliyini artırmaq məqsədi ilə `self` istifadə etmək məsləhət görülür. 
