@@ -73,7 +73,7 @@ print(emp_1.raise_amount)  # 1.12
 print(emp_2.raise_amount)  # 1.12
 ```
 
-`ishci_1` instance-ının özünün `artma_miqdari` adında attributu yoxdur. Ancaq `self` vasitəsi ilə o hansı class-a aid olduğunu bilir. Buna görə də özünün aid olduğu class-ın içindəki attributları axtarmağa başlıyır və `artma_miqdari`-nin `1.12`yə bərabər olduğunu görür.
+`emp_1` instance-ının özünün `raise_amount` adında attributu yoxdur. Ancaq `self` vasitəsi ilə o hansı class-a aid olduğunu bilir. Buna görə də özünün aid olduğu class-ın içindəki attributları axtarmağa başlıyır və `raise_amount`-nin `1.12`yə bərabər olduğunu görür.
 
 Sizi maraqlı bir halla tanış etmək istəyirəm. Əgər siz `emp_1.raise_amount = 1.15` desəniz, məntiqi olaraq `emp_1`-in aid olduğu  class atributunun \(yəni `Employee.raise_amount`-nin da dəyişməsini gözləyərdiniz elə deyil?
 
