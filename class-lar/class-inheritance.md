@@ -28,8 +28,8 @@ class Employee:
     def apply_raise(self):
         self.pay = int(self.pay + self.raise_amt)
 
-emp_1 = Employee('Corey', 'Schafer', 50000)
-emp_2 = Employee('Test', 'Employee', 60000)
+emp_1 = Employee('Mammad', 'Mammadov', 50000)
+emp_2 = Employee('Mammad2', 'Mammadov2', 60000)
 
 print(emp_1.email)
 print(emp_2.email)
@@ -37,8 +37,8 @@ print(emp_2.email)
 
 Output:
 
-> Corey.Schafer@email.com   
-> Test.Employee@email.com
+> Mammad.Mammadov@email.com   
+> Mammad2.Mammadov2@email.com
 
 Yuxarıdakı kodun 16-cı sətrindən etibarən dəyişiklik etməyə başladım.
 
@@ -79,8 +79,8 @@ class Developer(Employee):
 class Manager(Employee):
     pass
 
-dev_1 = Developer('Corey', 'Schafer', 50000)
-man_1 = Manager('Test', 'Employee', 60000)
+dev_1 = Employee('Mammad', 'Mammadov', 50000)
+man_1 = Employee('Mammad2', 'Mammadov2', 60000)
 
 print(dev_1.email)
 print(man_1.email)
@@ -88,8 +88,8 @@ print(man_1.email)
 
 Output:
 
-> Corey.Schafer@email.com   
-> Test.Employee@email.com
+> > Mammad.Mammadov@email.com   
+> > Mammad2.Mammadov2@email.com
 
 `Method resolution order`-i görməyin bir yolu da python-un `help` method-undan istifadə etməkdir. Əgər yuxarıdaki kodun sonunda bunu yazsaq:
 
@@ -156,8 +156,8 @@ Nümunə kimi göstərəsi olsaq, görərik ki,
 ```python
 # Yuxarıdakı kodlar çox yer tutmasın deyə kəsilib.
 
-dev_1 = Developer('Corey', 'Schafer', 50000)
-man_1 = Manager('Test', 'Employee', 60000)
+dev_1 = Employee('Mammad', 'Mammadov', 50000)
+man_1 = Employee('Mammad2', 'Mammadov2', 60000)
 
 print(dev_1.pay)
 dev_1.apply_raise()
@@ -183,8 +183,8 @@ class Developer(Employee):
 class Manager(Employee):
     raise_amt = 1.10 # Manager subclass-ının özünə məxsus maaş artımı faizi.
 
-dev_1 = Developer('Corey', 'Schafer', 50000)
-man_1 = Manager('Test', 'Employee', 60000)
+dev_1 = Developer('Mammad', 'Mammadov', 50000)
+man_1 = Employee('Mammad2', 'Mammadov2', 60000)
 
 print(dev_1.pay) # Maaş artırmadan maaşları ekrana çap edirəm.
 print(man_1.pay) # 
@@ -208,7 +208,7 @@ Output:
 Fərz edək ki, bizə lazımdır ki, hər bir developer-i yaradarkən onun adı, soyadı, maaşından əlavə həmçinin onun əsas istifadə etdiyi proqramlaşdırma dilini də təyin edək.
 
 ```python
-dev_1 = Developer('Corey', 'Schafer', 50000)
+dev_1 = Developer('Mammad', 'Mammadov', 50000)
 ```
 
 Ancaq bu hal-hazırki kodda mümkün deyil çünki bundan qabaq `print(help(Developer))` yazaraq `Developer` subclass-ının 3 arqument götürdüyünü görmüşdük. 
@@ -260,8 +260,8 @@ class Developer(Employee):
 class Manager(Employee):
     raise_amt = 1.10
 
-dev_1 = Developer('Corey', 'Schafer', 50000, 'Python')
-man_1 = Manager('Test', 'Employee', 60000)
+dev_1 = Developer('Mammad', 'Mammadov', 50000, 'Python')
+man_1 = Manager('Mammad2', 'Mammadov2', 60000)
 
 print(dev_1.prog_lang)
 ```
@@ -359,9 +359,9 @@ class Manager(Employee):
         for emp in self.employees: # employees siyahısındakı hər bir employeenin 
             print('->', emp.fullname()) # fullname-ini ekrana çap edir.
 
-dev_1 = Developer('Corey', 'Schafer', 50000, 'Python')
-emp_1 = Employee('Shi', 'Fu', 50000)
-man_1 = Manager('Sue', 'Smith', 60000)
+dev_1 = Developer('Mammad', 'Mammadov', 50000, 'Python')
+emp_1 = Employee('Mammad2', 'Mammadov2', 50000)
+man_1 = Manager('Mammad3', 'Mammadov3', 60000)
 
 
 man_1.add_emp(dev_1) # man_1-in manage etdiyi insan siyahısına dev_1-i əlavə edir.
@@ -373,11 +373,12 @@ man_1.print_emp()       # man_1-in manage etdiyi insan siyahısını ekrana çap
 
 Output:
 
-> Sue Smith is managing these people   
-> -&gt; Corey Schafer  
-> -&gt; Shi Fu  
-> Sue Smith is managing these people   
-> -&gt; Shi Fu
+> Mammad3 Mammadov3 is managing these people   
+> -&gt; Mammad2 Mammadov2  
+> -&gt; Mammad Mammadov
+>
+> Mammad3 Mammadov3 is managing these people   
+> -&gt; Mammad Mammadov
 
 Yuxarıdakı misalda kod parçalarının nə etdiyini comment şəklində izah etmişəm.
 
@@ -445,9 +446,9 @@ class Manager(Employee):
         for emp in self.employees:
             print('->', emp.fullname())
 
-dev_1 = Developer('Corey', 'Schafer', 50000, 'Python')
-emp_1 = Employee('Shi', 'Fu', 50000)
-man_1 = Manager('Sue', 'Smith', 60000)
+dev_1 = Developer('Mammad', 'Mammadov', 50000, 'Python')
+emp_1 = Employee('Mammad2', 'Mammadov2', 50000)
+man_1 = Manager('Mammad3', 'Mammadov3', 60000)
 
 
 print(isinstance(man_1, Manager))   # True
