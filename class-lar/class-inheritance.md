@@ -45,9 +45,9 @@ Yuxarıdakı kodun 16-cı sətrindən etibarən dəyişiklik etməyə başladım
 Pythonda subclass yaratmaq çox sadədir. Birinci normal qaydada `class` keyword-ündən istifadə edib ondan sonra class-ın adını qoymaq lazımdır. Bundan sonra isə mötərizə içində yeni yaranan classın hansı class-dan method və attribute-ları inherit etməsini istədiyimizi demək lazımdır \(bax: aşağıdakı kodda sətir 16 və 19\). Fikir verirsinizsə, sətir 17 və 20-də pass keyword-ünü işlətmişəm. 
 
 {% hint style="info" %}
-The `pass` statement is used as a placeholder for future code.  
-When the `pass` statement is executed, nothing happens, but you avoid getting an error when empty code is not allowed.  
-Empty code is not allowed in loops, function definitions, class definitions, or in if statements.
+Python-da loop-ların, funksiyaların, şərt operatorlarının içində kod olmamağı error yaradır.  
+pass keyword-ü vasitəsiylə error yaratmadan kodun işləməsini təmin etmək mümkündür.  
+pass keyword-ü həmçinin, gələcəkdə yazılacaq kodu bildirmək üçün də istifadə olunur.
 {% endhint %}
 
 Ancaq burada mənim `pass` işlətməyimin səbəbi başqadır. Mən faktiki olaraq `Developer` və `Manager` subclass-ları içində nəsə yazmasam belə, 22 və 23-cü sətirlərdə onlardan istifadə etmişəm. Bəs hər iki kod necə eyni nəticəni verib?
