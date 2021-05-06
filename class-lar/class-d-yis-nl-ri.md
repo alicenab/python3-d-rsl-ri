@@ -53,11 +53,11 @@ class Employee:
 
     raise_amount = 1.12
     
-    def __init__(self, ad, soyad, maas):
-        self.ad = ad
-        self.soyad = soyad
-        self.maas = maas
-        self.email = ad + '.' + soyad + '@email.com'
+    def __init__(self, first, last, pay):
+        self.first = first
+        self.last = last
+        self.pay = pay
+        self.email = first + '.' + last + '@email.com'
         
     def fullname(self):
         return '{} {}'.format(self.first, self.last)
@@ -84,11 +84,11 @@ class Employee:
 
     raise_amount = 1.12
     
-    def __init__(self, ad, soyad, maas):
-        self.ad = ad
-        self.soyad = soyad
-        self.maas = maas
-        self.email = ad + '.' + soyad + '@email.com'
+     def __init__(self, first, last, pay):
+        self.first = first
+        self.last = last
+        self.pay = pay
+        self.email = first + '.' + last + '@email.com'
         
     def fullname(self):
         return '{} {}'.format(self.first, self.last)
