@@ -11,7 +11,7 @@ Tutaq ki, şirkətdəki işçiləri əks etdirən bir tətbiq yazmalıyıq. Hər
 İşçi adında bir class yaratmaq üçün aşağıdaki kodu yazmaq kifayətdir.
 
 ```python
-class Ishci:
+class Employee:
     pass
 ```
 
@@ -21,52 +21,52 @@ Python-dan istifadə edərkən, əgər boş bir class və ya funksiyadan istifad
 
 Instance nədir?
 
-Yuxarıdaki misalda Işçi üçün class yaratmışdıq. Hər işçini bu qəlibə oturtduqca, işçi, qəlibin instance-ı olur. Daha texniki dildə desək
+Yuxarıdaki misalda işçi üçün class yaratmışdıq. Hər işçini bu qəlibə oturtduqca, işçi, qəlibin instance-ı olur. Daha texniki dildə desək:
 
 ```python
-class Ishci:
+class Employee:
     pass
 
-# Burada ishci_1 ve ishci_2 Ishci class-inin instance-lardir.
-ishci_1 = Ishci() 
-ishci_2 = Ishci()
+# Burada emp_1 ve emp_2 Employee class-inin instance-lardir.
+emp_1= Employee() 
+emp_2 = Ishci()
 
-print(ishci_1) # <__main__.ishci object at 0x1013775f8>
-print(ishci_2) # <__main__.ishci object at 0x101377668>
+print(emp_1) # <__main__.Employee object at 0x1013775f8>
+print(emp_2) # <__main__.Employee object at 0x101377668>
 ```
 
 
 
 Gördüyünüz kimi, hər instance-ın özünə aid yaddaşda yeri var və tipi object-dir. Python-da instance dəyişənləri və class dəyişənləri var.
 
-`ishchi_1` də təyin etdiyimiz instance dəyişənləri heç vaxt `inshci_2`nin instance dəyişənləri ilə toqquşmur yaddaşdaki yeri fərqli olduğuna görə.
+`emp_1` də təyin etdiyimiz instance dəyişənləri heç vaxt `emp_2`nin instance dəyişənləri ilə toqquşmur yaddaşdaki yeri fərqli olduğuna görə.
 
-Gəlin `ishci_1` və `ishci_2` yə bəzi instance dəyişənləri təyin edək.
+Gəlin `emp_1` və `emp_2` yə bəzi instance dəyişənləri təyin edək.
 
  
 
 ```python
-class Ishci:
+class Employee:
     pass
     
-ishci_1 = Ishci()
-ishci_2 = Ishci()
+emp_1 = Employee()
+emp_2 = Employee()
 
-print(ishci_1) # <__main__.ishci object at 0x1013775f8>
-print(ishci_2) # <__main__.ishci object at 0x101377668>
+print(emp_1) # <__main__.Employee object at 0x1013775f8>
+print(emp_2) # <__main__.Employee object at 0x101377668>
 
-ishci_1.ad = 'Ali'
-ishci_1.soyad = 'Mammadzada'
-ishci_1.email = 'Ali.Mammadzada@email.com'
-ishci_1.maas = 50000
+emp_1.first = 'Mammad'
+emp_1.last = 'Mammadov'
+emp_1.email = 'Mammad.Mammadov@email.com'
+emp_1.pay = 50000
 
-ishci_2.ad = 'Sarkhan'
-ishci_2.soyad = 'Ismayilov'
-ishci_2.email = 'Sarkhan.Ismayilov@email.com'
-ishci_2.maas = 60000
+emp_2.first = 'Mammad2'
+emp_2.last = 'Mammadov2'
+emp_2.email = 'Mammad2.Mammadov2@email.com'
+emp_2.pay = 60000
 
-print(ishci_1.email) # ali.mammadzada@email.com
-print(ishci_2.email) # sarkhan.ismayilov@email.com
+print(emp_1.email) # Mammad.Mammadov@email.com
+print(emp_2.email) # sarkhan.ismayilov@email.com
 ```
 
 İki işçinin informasiyasını əl vasitəsi ilə daxil etmək çətin və uzun olur, hər dəfə instance yaradılanda bu məlumatın avtomatik daxil olunmasını təmin etmək gözəl fikir olardı. Bunun üçün əsas class-ımızın içində `__init__` method-unu istifadə etməliyik.
@@ -79,18 +79,18 @@ print(ishci_2.email) # sarkhan.ismayilov@email.com
 `__init__` instace təyin edən zaman class-ın içində işə düşən ilk method-dur.
 
 ```python
-class Ishci:
-    def __init__(self, ad, soyad, maas):
-        self.iad = ad
-        self.isoyad = soyad
-        self.imaas = maas
-        self.iemail = ad + '.' + soyad + '@email.com'
+class Employee:
+    def __init__(self, first, last, pay):
+        self.ifirst = first
+        self.ilast = last
+        self.ipay = pay
+        self.iemail = first+ '.' + last + '@email.com'
     
-ishci_1 = Ishci('Ali', 'Mammadzada', 50000)
-ishci_2 = Ishci('Serxan', 'Ismayilov', 60000)
+emp_1 = Employee('Mammad', 'Mammadov', 50000)
+emp_2 = Employee('Mammad2', 'Mammadov2', 60000)
 
-print(ishci_1.iemail) # Ali.Mammadzada@email.com
-print(ishci_2.iemail) # Serxan.Ismayilov@email.com
+print(emp_1.iemail) # Mammad.Mammadov@email.com
+print(emp_2.iemail) # Mammad2.Mammadov2@email.com
 ```
 
 Gördüyünüz kimi 21 sətirlik bir koddan 9 sətirlik bir koda düşdük.
@@ -98,48 +98,48 @@ Gördüyünüz kimi 21 sətirlik bir koddan 9 sətirlik bir koda düşdük.
 ad, soyad, maas və email bizim class-ımızın attribute-ları idi. Ancaq biz class-a həmçinin bəzi funksionallıqları da əlavə etmək istəyirik. Deməli class-a method yazacayıq. Tutaq ki, işçilərin ad və soyadlarını \(yəni fullname-i\) göstərən bir method-a ehtiyacımız var. Praktiki olaraq bunu çox sadə şəkildə bu cür həll edə bilərik:
 
 ```python
-class Ishci:
-    def __init__(self, ad, soyad, maas):
-        self.iad = ad
-        self.isoyad = soyad
-        self.imaas = maas
-        self.iemail = ad + '.' + soyad + '@email.com'
+class Employee:
+    def __init__(self, first, last, pay):
+        self.ifirst = first
+        self.ilast = last
+        self.ipay = pay
+        self.iemail = first + '.' + last + '@email.com'
     
-ishci_1 = Ishci('Ali', 'Mammadzada', 50000)
-ishci_2 = Ishci('Serxan', 'Ismayilov', 60000)
+emp_1 = Employee('Mammad', 'Mammadov', 50000)
+emp_2 = Employee('Mammad2', 'Mammadov2', 60000)
 
-print('{} {}'.format(ishci_1.iad, ishci_1.isoyad) # Ali Mammadzada
-print('{} {}'.format(ishci_1.iad, ishci_2.isoyad) # Serxan Ismayilov
+print('{} {}'.format(emp_1.ifirst, emp_1.ilast) # Mammad.Mammadov@email.com
+print('{} {}'.format(emp_2.ifirst, emp_2.ilast) # Mammad2.Mammadov2@email.com
 ```
 
 Ancaq hər dəfə işçinin tam adı lazım olduqca yuxarıdaki kodun 11-12-ci sətirlərindəki kimi uzun kod yazmaq çətin olacaq. Bu problemi həll etmək üçün Ishci class-ının içində bir method yazmaq mümkündür. Ancaq `__init__` methodu əvvəl işləyib attribute-ları təyin etdiyi üçün, artıq yeni method-da ad, soyad, maas yazmaq lazım deyil.
 
 {% hint style="info" %}
-`iad` `isoyad` `imaas` `iemail` məsələsini anladığınıza görə, normal qaydada təyin edirəm.
+`ifirst` `ilast` `ipay` `iemail` məsələsini anladığınıza görə, normal qaydada təyin edirəm.
 {% endhint %}
 
 ```python
-class Ishci:
-    def __init__(self, ad, soyad, maas):
-        self.ad = ad
-        self.soyad = soyad
-        self.maas = maas
-        self.email = ad + '.' + soyad + '@email.com'
+class Employee:
+    def __init__(self, first, last, pay):
+        self.ifirst = first
+        self.ilast = last
+        self.ipay = pay
+        self.iemail = first + '.' + last + '@email.com'
         
-    def tamAd(self):
-        return '{} {}'.format(self.ad, self.soyad)
+    def fullname(self):
+        return '{} {}'.format(self.first, self.last)
         
-ishci_1 = Ishci('Ali', 'Mammadzada', 50000)
-ishci_2 = Ishci('Serxan', 'Ismayilov', 60000)
+emp_1 = Employee('Mammad', 'Mammadov', 50000)
+emp_2 = Employee('Mammad2', 'Mammadov2', 60000)
 
-print(ishci_1.tamAd()) # Ali Mammadzada
-print(ishci_2.tamAd()) # Serxan Ismayilov
+print(emp_1.fullname()) # Mammad Mamamadov
+print(emp_2.fullname()) # Mammad2 Mammadov2
 ```
 
  8-ci sətiri belə fikirləşin 
 
 ```python
-    def tamAd()
+    def fullname()
 ```
 
 Əgər yuxarıdakı nümunədəki kimi siz `self`-i yazmadan instance yaratmağa çalışsanız, Həmin dəyəri print edərkən Python sizə TypeError verəcək:

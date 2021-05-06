@@ -11,21 +11,21 @@ Class dəyişənləri, class-ın aid olduğu bütün instance-lar üzrə işləd
 Gəlin belə təsəvvür edək ki, şirkət hər il öz işçilərinin maaşını 12 faiz artırır. Biz bunu kod olaraq ifadə etmək üçün aşağıdaki kimi kod yaza bilərik:
 
 ```python
-class Ishci:
+class Employee:
 
-    artma_miqdari = 1.12
+    raise_amount = 1.12
     
-    def __init__(self, ad, soyad, maas):
-        self.ad = ad
-        self.soyad = soyad
-        self.maas = maas
-        self.email = ad + '.' + soyad + '@email.com'
+    def __init__(self, first, last, pay):
+        self.first = first
+        self.last = last
+        self.pay = pay
+        self.email = first + '.' + last + '@email.com'
         
-    def tamAd(self):
-        return '{} {}'.format(self.ad, self.soyad)
+    def fullname(self):
+        return '{} {}'.format(self.first, self.last)
         
-    def maas_artimi(self):
-        self.maas = int(self.maas * artma_miqdari)
+    def apply_raise(self):
+        self.pay = int(self.pay * raise_amount)
         
 ishci_1 = Ishci('Ali', 'Mammadzada', 50000)
 ishci_2 = Ishci('Serxan', 'Ismayilov', 60000)
@@ -44,7 +44,7 @@ NameError: name 'artma_miqdari' is not defined.
 15-ci sətirdə olduğu kimi `maas_artimi` method-un içində `artma_miqdari` dəyişənini görmədiyi üçün, onu `Ishci.artma_miqdari` \(vəya `self.artma_miqdari`\) olaraq dəyişdirmək lazımdır.
 
 ```python
-class Ishci:
+class Employee:
 
     artma_miqdari = 1.12
     
@@ -75,7 +75,7 @@ Sizi maraqlı bir halla tanış etmək istəyirəm. Əgər siz `ishci_1.artma_mi
 Ancaq python3 belə işləmir. Əgər siz `ishci_1.artim_miqdari`-ni `1.15` etsəniz, bu zaman python özü `ishci_1` instance-ında `artim_miqdari` adında əvvəl mövcud olmayan attribute yaradır. 
 
 ```python
-class Ishci:
+class Employee:
 
     artma_miqdari = 1.12
     
