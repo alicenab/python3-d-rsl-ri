@@ -28,8 +28,8 @@ class Employee:
     pass
 
 # Burada emp_1 ve emp_2 Employee class-inin instance-lardir.
-emp_1= Employee() 
-emp_2 = Ishci()
+emp_1 = Employee() 
+emp_2 = Employee()
 
 print(emp_1) # <__main__.Employee object at 0x1013775f8>
 print(emp_2) # <__main__.Employee object at 0x101377668>

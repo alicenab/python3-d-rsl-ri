@@ -29,6 +29,11 @@ class Employee:
         
 emp_1 = Employee('Mammad', 'Mammadov', 50000)
 emp_2 = Employee('Mammad2', 'Mammadov2', 60000)
+
+
+print(emp_1.pay)
+emp_1.apply_raise()
+print(emp_1.pay)
 ```
 
 Əvvəlki bölmədə yazdığım koda, 3-cü, 14-15-ci sətirləri əlavə etdim. Riyazi baxımdan bir dəyəri 12 faiz artırmağın yolu həmin dəyəri 1.12-yə vurmaqdır. Həmin dəyərin bizə axırda `int` dəyərində geri dönməsi üçün bütün hesablamanı `int()` içinə aldım. Real mühitdə belə etməyin. Bu pis nəticələrə yol aça bilər.
@@ -63,16 +68,16 @@ class Employee:
 emp_1 = Employee('Mammad', 'Mammadov', 50000)
 emp_2 = Employee('Mammad2', 'Mammadov2', 60000)
 
-print(Employee.artma_miqdari)    # 1.12
-print(emp_1 .artma_miqdari)  # 1.12
-print(emp_2 .artma_miqdari)  # 1.12
+print(Employee.raise_amount)    # 1.12
+print(emp_1.raise_amount)  # 1.12
+print(emp_2.raise_amount)  # 1.12
 ```
 
 `ishci_1` instance-ının özünün `artma_miqdari` adında attributu yoxdur. Ancaq `self` vasitəsi ilə o hansı class-a aid olduğunu bilir. Buna görə də özünün aid olduğu class-ın içindəki attributları axtarmağa başlıyır və `artma_miqdari`-nin `1.12`yə bərabər olduğunu görür.
 
-Sizi maraqlı bir halla tanış etmək istəyirəm. Əgər siz `ishci_1.artma_miqdari = 1.15` desəniz, məntiqi olaraq `ishci_1`-in aid olduğu  class atributunun \(yəni `Ishci.artma_miqdari`-nin da dəyişməsini gözləyərdiniz elə deyil?
+Sizi maraqlı bir halla tanış etmək istəyirəm. Əgər siz `emp_1.raise_amount = 1.15` desəniz, məntiqi olaraq `emp_1`-in aid olduğu  class atributunun \(yəni `Employee.raise_amount`-nin da dəyişməsini gözləyərdiniz elə deyil?
 
-Ancaq python3 belə işləmir. Əgər siz `ishci_1.artim_miqdari`-ni `1.15` etsəniz, bu zaman python özü `ishci_1` instance-ında `artim_miqdari` adında əvvəl mövcud olmayan attribute yaradır. 
+Ancaq python3 belə işləmir. Əgər siz `emp_1.raise_amount` -ni `1.15` etsəniz, bu zaman python özü `emp_1` instance-ında `raise_amount`  adında əvvəl mövcud olmayan attribute yaradır. 
 
 ```python
 class Employee:
@@ -97,15 +102,15 @@ emp_2 = Employee('Mammad2', 'Mammadov2', 60000)
 
 print(emp_1.__dict__)
 # {'ad': 'Ali', 'soyad': 'Mammadzada', 'maas': 50000}
-emp_1.artma_miqdari = 1.15
+emp_1.raise_amount = 1.15
 
-print(Employee.artma_miqdari)    # 1.12
-print(emp_1.artma_miqdari)  # 1.15
-print(emp_2.artma_miqdari)  # 1.12
+print(Employee.raise_amount)    # 1.12
+print(emp_1.raise_amount)  # 1.15
+print(emp_2.raise_amount)  # 1.12
 
 print(emp_1.__dict__) 
 # {'artma_miqdari': 1.15, 'ad': 'Ali', 'soyad': 'Mammadzada', 'maas': 50000}
 ```
 
-Nümunədən də gördüyünüz kimi, əvvəl  `ishci_1`-in `namespace`-ində `artma_miqdari` yox idi. Ancaq sonradan yarandı. 
+Nümunədən də gördüyünüz kimi, əvvəl  `emp_1`-in `namespace`-ində `raise_amount` yox idi. Ancaq sonradan yarandı. 
 
