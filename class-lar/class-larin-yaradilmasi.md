@@ -1,3 +1,10 @@
+---
+description: >-
+  Salam, OOP-ni ən yaxşı başa salan şəxsin Corey Schafer olduğunu başa düşdükdən
+  sonra, onun youtube-dakı video seriyalarını öz əlavələrimlə sizə öyrətməyə
+  qərar verdim.
+---
+
 # Class-ların yaradılması
 
 Nəyə görə class-ları işlədirik? Class-lar bizə data və funksiyaları məntiqi şəkildə qruplaşdırmağa imkan verir. Mən onları müvafiq olaraq attribute və method adlandıracağam. 
