@@ -109,7 +109,7 @@ print(emp_1.raise_amount)  # 1.15
 print(emp_2.raise_amount)  # 1.12
 
 print(emp_1.__dict__) 
-# {'raise_amount': 1.15, 'first': 'Ali', 'last': 'Mammadzada', 'pay': 50000}
+# {'raise_amount': 1.15, 'first': 'Mammad', 'last': 'Mammadov', 'pay': 50000}
 ```
 
 Nümunədən də gördüyünüz kimi, əvvəl  `emp_1`-in `namespace`-ində `raise_amount` yox idi. Ancaq sonradan yarandı. 
