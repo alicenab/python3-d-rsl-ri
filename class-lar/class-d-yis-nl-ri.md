@@ -101,7 +101,7 @@ emp_2 = Employee('Mammad2', 'Mammadov2', 60000)
 
 
 print(emp_1.__dict__)
-# {'ad': 'Ali', 'soyad': 'Mammadzada', 'maas': 50000}
+# {'first': 'Mammad', 'last': 'Mammad', 'pay': 50000}
 emp_1.raise_amount = 1.15
 
 print(Employee.raise_amount)    # 1.12
@@ -109,7 +109,7 @@ print(emp_1.raise_amount)  # 1.15
 print(emp_2.raise_amount)  # 1.12
 
 print(emp_1.__dict__) 
-# {'artma_miqdari': 1.15, 'ad': 'Ali', 'soyad': 'Mammadzada', 'maas': 50000}
+# {'raise_amount': 1.15, 'first': 'Ali', 'last': 'Mammadzada', 'pay': 50000}
 ```
 
 Nümunədən də gördüyünüz kimi, əvvəl  `emp_1`-in `namespace`-ində `raise_amount` yox idi. Ancaq sonradan yarandı. 
