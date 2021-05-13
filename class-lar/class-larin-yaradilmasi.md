@@ -73,7 +73,7 @@ emp_2.email = 'Mammad2.Mammadov2@email.com'
 emp_2.pay = 60000
 
 print(emp_1.email) # Mammad.Mammadov@email.com
-print(emp_2.email) # sarkhan.ismayilov@email.com
+print(emp_2.email) # Mammad2.Mammadov2@email.com
 ```
 
 İki işçinin informasiyasını əl vasitəsi ilə daxil etmək çətin və uzun olur, hər dəfə instance yaradılanda bu məlumatın avtomatik daxil olunmasını təmin etmək gözəl fikir olardı. Bunun üçün əsas class-ımızın içində `__init__` method-unu istifadə etməliyik.
