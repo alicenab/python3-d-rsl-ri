@@ -6,7 +6,7 @@
 
 2\) leksika (lüğət) - dili əmələ gətirən sözlər. Məsələn "komputer" yazılışı düzgündür ancaq "kopmutre" yazılışı düzgün deyil.
 
-3\) sintaksis - Sözlərin cümlə əmələ gətirə bilməsi, məsələn "Mənim qara rəngli maşınım var" doğrudur, "Məndə qaraltı rəngsiz maşında varımdı".&#x20;
+3\) sintaksis - Sözlərin cümlə əmələ gətirə bilməsi, məsələn "Mənim qara rəngli maşınım var" doğrudur, "Məndə qaraltı rəngsiz maşında varımdı"  doğru deyil.
 
 4\) semantika - Sözlərin cümlə içində məna verəcək formada düzgün sıralanması, məsələn,  "Mənim komputerim var." doğrudur, "Komputerim mənim var." doğru deyil.
 

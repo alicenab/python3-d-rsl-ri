@@ -9,7 +9,7 @@ Təsəvvür edin ki, müəyyən bir sürətlə müəyyən vaxt ərzində uzun yo
 1\) məsafəni rəqəmlər vasitəsilə qeyd etmək olar.\
 2\) vaxtı rəqəmlər vasitəsilə qeyd etmək olar\
 3\)məsafəni göstərən rəqəmləri vaxtı göstərən rəqəmlərə bölsək sürəti göstərən rəqəmləri yaddaşda saxlaya bilərik\
-4\)ən axırda isə istifadəçiyə əldə etdiyimiz sürəti göstərən rəqəmləri göstərmək lazım olacaq.
+4\)ən axırda isə istifadəçiyə əldə etdiyimiz sürəti göstərən rəqəmləri ekrana çıxarmaq lazım olacaq.
 
 
 
