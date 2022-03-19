@@ -6,6 +6,8 @@
 
 * [Proqramlaşdırma haqqında](giris/proqramlasdirma-haqqinda.md)
 * [Dili nə əmələ gətirir?](giris/dili-n-m-l-g-tirir.md)
+* [Compilation vs. interpretation](giris/compilation-vs.-interpretation.md)
+* [Interpreter nəcür işləyir](giris/interpreter-n-cuer-isl-yir.md)
 
 ## Class-lar
 
