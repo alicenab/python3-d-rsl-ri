@@ -8,6 +8,7 @@
 * [Dili nə əmələ gətirir?](giris/dili-n-m-l-g-tirir.md)
 * [Compilation vs. interpretation](giris/compilation-vs.-interpretation.md)
 * [Interpreter nəcür işləyir](giris/interpreter-n-cuer-isl-yir.md)
+* [Page 1](giris/page-1.md)
 
 ## Class-lar
 
