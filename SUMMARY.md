@@ -9,6 +9,8 @@
 * [Compilation vs. interpretation](giris/compilation-vs.-interpretation.md)
 * [Interpreter nəcür işləyir](giris/interpreter-n-cuer-isl-yir.md)
 * [Python nədir](giris/ptest.md)
+* [Digər python versiyaları](giris/dig-r-python-versiyalari.md)
+* [Python-dan ilk istifadə](giris/python-dan-ilk-istifad.md)
 
 ## Class-lar
 
