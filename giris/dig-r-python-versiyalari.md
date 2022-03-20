@@ -1,3 +1,7 @@
 # Digər python versiyaları
 
-CPython, Cython, Jhyton, PyPy, RPython
+CPython - Python-un digər adıdır, \
+Cython - , \
+Jhyton - , \
+PyPy - , \
+RPython -
