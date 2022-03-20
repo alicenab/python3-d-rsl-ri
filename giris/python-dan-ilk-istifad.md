@@ -4,5 +4,8 @@
 
 `python3 -V`
 
-Əgər yüklənibsə python3-ün versiyası ekrana yazılacaq.
+Əgər yüklənibsə python3-ün versiyası ekrana yazılacaq. Windows istifadə edən şəxslər isə ağlayaraq bu sadəliyi öz gündəliklərinə yaza bilərlər 😛
 
+Əlbətdə ki, bu bir zarafatdır, windows istifadəçiləri aşağıdakı linkdən python3-ü öz kompüterlərinə yükləyib quraşdıra bilərlər.
+
+[https://www.python.org/ftp/python/3.10.3/python-3.10.3-amd64.exe](https://www.python.org/ftp/python/3.10.3/python-3.10.3-amd64.exe)
