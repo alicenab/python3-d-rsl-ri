@@ -1,6 +1,6 @@
 # Proqramlaşdırma haqqında
 
-Proqram təminatı komputeri istifadəyə yararlı hala gətirən əsas şeydir. Proqram təminatı olmadan ən güclü komputeri belə heç bir işə yaramayan dəmir parçası adlandırmaq olar.
+Proqram təminatı kompüteri istifadəyə yararlı hala gətirən əsas şeydir. Proqram təminatı olmadan ən güclü kompüteri belə heç bir işə yaramayan dəmir parçası adlandırmaq olar.
 
 Yəqin ki, komputerlərin çox çətin hesablamaları icra etdikləri haqqında haradasa eşitmisiniz. Əslində komputerlər özlərinə verilmiş çətin bir tapşırığı olduğu formada başa düşmürlər. Əslində komputerlər addım-addım, sadə əməliyyatlar vasitəsilə hesablamalar aparırlar.
 
