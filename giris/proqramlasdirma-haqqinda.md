@@ -15,7 +15,7 @@ Təsəvvür edin ki, müəyyən bir sürətlə müəyyən vaxt ərzində uzun yo
 
 Bu addımlar məqsədimizə çatmaq üçün yazacağımız proqram təminatının **alqoritm**i adlandırıla bilər.
 
-Əlbətdə ki, komputer indi oxuduğunuz formada sözləri başa düşməyəcək, biz gərək yazdığımız sözləri komputerə özünün başa düşə biləcəyi **proqramlaşdırma dili**ndə yazaq.
+Əlbətdə ki, komputer indi oxuduğunuz formada sözləri başa düşməyəcək, biz gərək yazdığımız2 sözləri komputerə özünün başa düşə biləcəyi **proqramlaşdırma dili**ndə yazaq.
 
 
 
