@@ -2,6 +2,10 @@
 
 Python geniş istifadədə olan, interpreted, object-oriented(obyekt-yönümlü), ümumi istifadəyə yararlı yüksək səviyyəli proqramlaşdırma dilidir.&#x20;
 
+Python internet xidmətlərinin (axtarış mühərrikləri, bulud xidmətləri, sosial media və digər xidmətlər) bir çoxunda istifadə olunurlar. Python həmçinin elmi araşdırmalar və İT sahəsində proqram təminatının testlərinin aparılmasında da geniş istifadə olunur. Ümumilikdə isə zəngin funksiyaları olduğu üçün sadalanmayacaq dərəcədə çox məqsədlər üçün istifadə edilə bilər.
+
+Python yüksək səviyyəli (insan dilinə daha yaxın) dil olduğu üçün əsasən maşın dilinin istifadə edildiyi böyük hesablama sürətləri tələb edilən yerlərdə işlədilmir.&#x20;
+
 Python ingilis dilinə birbaşa tərcümədə böyük ilan kimi tərcümə oluna bilər. Lakin python öz adını BBC kanalında efirə gedən komedia janrındakı **Monty Python's Flying Circus**-dan götürmüşdür.
 
 Python 1956-cı ildə anadan olmuş Haarlem, Niderland-da anadan olmuş **Guido Van Rossum** tərəfindən yaradılmışdır.&#x20;
@@ -16,5 +20,7 @@ Python dili 1999-cu ildə yaradılarkən 4 əsas məqamın özünü tapmasına d
 * hamının inkişaf etdirə bilməsi üçün mənbə kodunun açıq və əlçatan olması
 * ingilis dilində başa düşülən olması
 * gündəlik tapşırıqları yerinə yetirə bilməsi.
+
+
 
 Hal-hazırda python-un üçüncü versiyası istifadə olunur və dəstəklənir. Python-un ikinci versiyası artıq dəstəklənmədiyi üçün yavaş-yavaş istifadədən qalxır. Python 2-ci versiyada yazılmış kod python 3-cü versiyasının interpreter-ində işə düşməyəcək. Bunun əksi də belədir. Python2-də yazılmış kodu python3-də çalışdırmaq üçün mütləq onu yenidən yazmalısınız.&#x20;

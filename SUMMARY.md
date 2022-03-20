@@ -11,6 +11,7 @@
 * [Python nədir](giris/ptest.md)
 * [Digər python versiyaları](giris/dig-r-python-versiyalari.md)
 * [Python-dan ilk istifadə](giris/python-dan-ilk-istifad.md)
+* [Koddakı error(xəta)-ları düzəlt](giris/koddaki-error-x-ta-lari-duez-lt.md)
 
 ## Class-lar
 
