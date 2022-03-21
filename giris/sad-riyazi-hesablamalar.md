@@ -76,6 +76,8 @@ print(14 % 4)
 * `3 * 4` cavab `12` →  **quotient** və **divisor** hasili;
 * `14 - 12` cavab `2` →  **remainder**-i əldə etdik.
 
+Qeyd. `0%3` kimi hesablamaların cavabı 3-dür.
+
 
 
 
