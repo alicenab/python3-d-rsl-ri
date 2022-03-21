@@ -1,4 +1,4 @@
-# ➕ sadə data tiplər
+# sadə data tiplər
 
 Python-da riyazi hesablamaları aparmaq üçün rəqəm və ədədləri əsasən üç data tipində təyin edirlər. integer, float və complex.
 
@@ -55,7 +55,9 @@ Komputerlər hərşeyi rəqəmsal olaraq yadda saxladıqları üçün, True 1 r�
 print(True>False) # Ekrana True çıxardacaq.
 ```
 
-Əlavə olaraq pythonda yoxluğu bildirən bir data tipi də mövcuddur. Bu `None` adlanır. Birşeyin olub olamamsını None ilə yoxlamaq mümkündür. Həmçinin bir müvəqqəti olaraq hansısa dəyişəni təyin etmək lazımdırsa və ona hansı dəyəri təyin edəcəyinizi bilmirsinizsə, həmin dəyişənə `None` dəyərini təyin edə bilərsiniz.
+Əlavə olaraq pythonda yoxluğu bildirən bir data tipi də mövcuddur. Bu `None` adlanır. Birşeyin olub olamamsını `None` ilə yoxlamaq mümkündür. Həmçinin bir müvəqqəti olaraq hansısa dəyişəni təyin etmək lazımdırsa və ona hansı dəyəri təyin edəcəyinizi bilmirsinizsə, həmin dəyişənə `None` dəyərini təyin edə bilərsiniz.
+
+
 
 
 

@@ -13,7 +13,8 @@
 * [Python-dan ilk istifadə](giris/python-dan-ilk-istifad.md)
 * [Koddakı error(xəta)-ları düzəlt](giris/koddaki-error-x-ta-lari-duez-lt.md)
 * [print() funksiyası](giris/print-funksiyasi.md)
-* [➕ sadə data tiplər](giris/sad-data-tipl-r.md)
+* [sadə data tiplər](giris/sad-data-tipl-r.md)
+* [sadə riyazi hesablamalar](giris/sad-riyazi-hesablamalar.md)
 
 ## Class-lar
 
