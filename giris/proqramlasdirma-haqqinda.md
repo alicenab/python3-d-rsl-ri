@@ -1,27 +1,26 @@
 # Proqramlaşdırma haqqında
 
-Proqram təminatı kompüteri istifadəyə yararlı hala gətirən əsas şeydir. Proqram təminatı olmadan ən güclü kompüteri belə heç bir işə yaramayan dəmir parçası adlandırmaq olar.
+Proqram təminatı kompüteri istifadəyə yararlı hala gətirən əsas şeydir. Proqram təminatı olmadığı təqdirdə ən güclü kompüteri belə heç bir işə yaramayan dəmir parçası adlandırmaq olar.
 
-Yəqin ki, komputerlərin çox çətin hesablamaları icra etdikləri haqqında haradasa eşitmisiniz. Əslində komputerlər özlərinə verilmiş çətin bir tapşırığı olduğu formada başa düşmürlər. Əslində komputerlər addım-addım, sadə əməliyyatlar vasitəsilə hesablamalar aparırlar.
+Yəqin ki, kompüterlərin çox çətin hesablamaları icra etdiyini haradasa eşitmisiniz. Əslində kompüterlər onlara verilmiş çətin bir tapşırığı olduğu kimi başa düşmür və addım-addım, sadə əməliyyatlar vasitəsilə hesablamalar aparırlar.
 
-Təsəvvür edin ki, müəyyən bir sürətlə müəyyən vaxt ərzində uzun yol qət getmisiniz. Məsafə və vaxt sizə məlumdur, sürət isə məlum deyil. Komputerlər özü vaxtın, sürətin, məsafənin necə bir şey olduğunu başa düşmürlər. Buna görə də, komputerə onların nə olduğunu izah etməlisiniz ki, sizin üçün hesablamaları apara bilsin.
+Təsəvvür edin ki, müəyyən bir sürətlə müəyyən vaxt ərzində uzun yol qət etmisiniz. Burada məsafə və vaxt sizə məlumdur, sürət isə məlum deyil. Kompüterlər özləri vaxtın, sürətin və məsafənin nə olduğunu başa düşmür. Buna görə də, kompüterə bu kəmiyyətlərin nə olduğunu izah etməlisiniz ki, sizin üçün hesablamaları apara bilsin.
 
-1\) məsafəni rəqəmlər vasitəsilə qeyd etmək olar.\
-2\) vaxtı rəqəmlər vasitəsilə qeyd etmək olar\
-3\)məsafəni göstərən rəqəmləri vaxtı göstərən rəqəmlərə bölsək sürəti göstərən rəqəmləri yaddaşda saxlaya bilərik\
-4\)ən axırda isə istifadəçiyə əldə etdiyimiz sürəti göstərən rəqəmləri ekrana çıxarmaq lazım olacaq.
+1\) Məsafəni rəqəmlər vasitəsilə qeyd etmək olar;\
+2\) Vaxtı rəqəmlər vasitəsilə qeyd etmək olar;\
+3\)Məsafəni göstərən rəqəmləri vaxtı göstərən rəqəmlərə bölsək, sürəti göstərən rəqəmləri yaddaşda saxlaya bilərik;\
+4\)Son addım olaraq isə istifadəçiyə əldə etdiyimiz sürəti göstərən rəqəmləri ekrana çıxarmaq lazım olacaq.
 
 
 
 Bu addımlar məqsədimizə çatmaq üçün yazacağımız proqram təminatının **alqoritm**i adlandırıla bilər.
 
-Əlbətdə ki, komputer indi oxuduğunuz formada sözləri başa düşməyəcək, biz gərək yazdığımız2 sözləri komputerə özünün başa düşə biləcəyi **proqramlaşdırma dili**ndə yazaq.
+Əlbəttə ki, kompüter sözləri bizim oxuduğumuz formada başa düşməyəcək, bu səbəbdən yazdığımız sözləri kompüterə özünün başa düşə biləcəyi **proqramlaşdırma dili**ndə yazmalıyıq.
 
 
 
-Komputeri yaxşı yetişdirilmiş bir itə bənzətmək mümkündür. O yalnız özünün başa düşdüyü əmrləri icra edə bilir. Məsələn, _bu iki rəqəmi götür, birincini ikinciyə böl, cavabı ekrana yaz._ İcra edə bildiyi əmrlərin siyahısı **IL (Instruction List)** adlanır.
+Kompüteri yaxşı təlim keçmiş bir itə bənzətmək mümkündür. O, yalnız özünün başa düşdüyü əmrləri icra edə bilir. Məsələn, _bu iki rəqəmi götür, birincini ikinciyə böl, cavabı ekrana yaz._ İcra edə bildiyi əmrlərin siyahısı **IL (Instruction List)** adlanır.
 
 
 
-Komputerlərin başa düşdüyü dil də insanlar tərəfindən yazılmışdır. Hal-hazırda komputerlər özü yeni dil yarada bilmirlər. Ancaq inkişaf edən texnologiyalar vasitəsilə gələcəkdə bu hal dəyişə bilər. İnsanların bir neçə dildən istifadə edə bildiyi kimi, komputerlər də bir neçə dildən istifadə edə bilirlər. Bu dillərdən biri **python**-dur. İnsanların istifadə etdiyi dillər **təbii dillər** adlanır **(natual languages).**
-
+Kompüterlərin başa düşdüyü dil insanlar tərəfindən yazılmışdır. Hal-hazırda kompüterlər özləri yeni dil yaratmağa qadir deyillər, lakin inkişaf edən texnologiyalar vasitəsilə gələcəkdə bu hal dəyişə bilər. İnsanlar kimi kompüterlər də bir neçə dildən istifadə edə bilirlər. Bu dillərdən biri **python**-dur. İnsanların istifadə etdiyi dillər **təbii dillər** adlanır **(natural languages).**
