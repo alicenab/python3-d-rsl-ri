@@ -31,12 +31,12 @@ Python3-ü komputerə ilk quraşdırdığınız vaxt yuxarıdaki bəndlərdəki 
 Test üçün MacOS əməliyyat sistemində prosesin necə olduğunu göstərəcəm.
 
 ```
-alicenab@Alis-MacBook-Pro ders % pwd
+pwd
 /Users/alicenab/Desktop/ders
-alicenab@Alis-MacBook-Pro ders % vim ilk.py
-alicenab@Alis-MacBook-Pro ders % cat ilk.py 
+vim ilk.py
+cat ilk.py 
 print("Salam dunya")
-alicenab@Alis-MacBook-Pro ders % python3 ilk.py 
+python3 ilk.py 
 Salam dunya
 ```
 
