@@ -37,3 +37,5 @@ Masada oturan şəxslərin işi bitdikdən sonra onlar dəyişə bilərlər. Pro
 
 
 
+Dəyişnlər adlandırılan zaman&#x20;
+
