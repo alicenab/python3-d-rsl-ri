@@ -59,7 +59,13 @@ print(True>False) # Ekrana True çıxardacaq.
 
 
 
+Digər bir data tipi isə **string** adlanır. Stringlər vasitəsilə hərfləri və cümlələri ifadə etmək mümkündür.
 
+```
+print('a'*3)
+```
+
+Yuxarıda göstərilmiş kod parçası düzgündür. Hesablama nəticəsi olaraq ekrana 3 ədəd a hərfi `aaa` çıxacaqdır.&#x20;
 
 
 
