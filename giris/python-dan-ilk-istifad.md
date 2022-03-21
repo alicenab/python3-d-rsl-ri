@@ -6,6 +6,8 @@
 python3 -V
 ```
 
+
+
 Əgər yüklənibsə python3-ün versiyası ekrana yazılacaq. Windows istifadə edən şəxslər isə ağlayaraq bu sadəliyi öz gündəliklərinə yaza bilərlər 😛
 
 Əlbətdə ki, bu bir zarafatdır, windows istifadəçiləri aşağıdakı linkdən python3-ü öz kompüterlərinə yükləyib quraşdıra bilərlər.
@@ -14,15 +16,15 @@ python3 -V
 (bu spesifik olaraq 3.10.3 versiyasının linkidir)
 {% endembed %}
 
-Python-da kod yazmağa başlamaq üçün üç şeyə ehtiyacınız var
+Python-da kod yazmağa başlamaq üçün iki şeyə ehtiyacınız var
 
 1\) kodu yazdığınız **editor**-a (notepad, vim, notepad++, visual studio code və s.)
 
 2\) yazdığınız kodu işə salmaq və işə düşmüş kod nəzarətdən çıxdıqda həmin prosesi bağlamaq üçün **console**(terminal)-a
 
-3\) yazdığınız kodu addım-addım izləyib, hansı mərhələdə kodun necə davrandığını müşahidə etməyinizə kömək edən **debugger**-ə.
+Əlavə olaraq, yazdığınız kodu addım-addım izləyib, hansı mərhələdə kodun necə davrandığını müşahidə etməyinizə kömək edən **debugger**-dən istifadə edə bilərsiniz.
 
-Python3-ü komputerə ilk quraşdırdığınız vaxt yuxarıdaki bəndlərdəki özəllikləri özündə birləşdirən **IDLE** adında bir alət də yüklənir.&#x20;
+Python3-ü Windows əməliyyat sisteminə quraşdırdığınız vaxt yuxarıdaki bəndlərdəki özəllikləri və debuggeri özündə birləşdirən **IDLE** adında bir alət də yüklənir.&#x20;
 
 **IDLE** açılımı: Integrated Development and Learning Environment-dir.
 
