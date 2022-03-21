@@ -2,6 +2,8 @@
 
 print() funksiyası özünə daxil edilmiş obyektləri insanın başa düşə biləcəyi formada çıxış cihazına(bu əsasən terminal olur) ötürən funksiyaya deyilir.
 
+Mötərizənin içində vergüllə ayrılmış hər bir obyekt funksiyanın arqumentləri sayılır.
+
 Gəlin aşağıdakı nümunəyə baxaq
 
 ```python
