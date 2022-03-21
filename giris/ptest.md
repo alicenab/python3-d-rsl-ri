@@ -1,4 +1,4 @@
-# Python nədir
+# Python nədir?
 
 Python geniş istifadədə olan, interpreted, object-oriented (obyekt yönümlü), ümumi istifadəyə yararlı yüksək səviyyəli proqramlaşdırma dilidir.&#x20;
 
