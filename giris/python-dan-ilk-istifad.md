@@ -6,9 +6,9 @@
 python3 -V
 ```
 
+Əgər yüklənibsə python3-ün versiyası ekrana yazılacaq.&#x20;
 
-
-Əgər yüklənibsə python3-ün versiyası ekrana yazılacaq. Windows istifadə edən şəxslər isə ağlayaraq bu sadəliyi öz gündəliklərinə yaza bilərlər 😛
+Windows istifadə edən şəxslər isə ağlayaraq bu sadəliyi öz gündəliklərinə yaza bilərlər 😛
 
 Əlbətdə ki, bu bir zarafatdır, windows istifadəçiləri aşağıdakı linkdən python3-ü öz kompüterlərinə yükləyib quraşdıra bilərlər.
 
