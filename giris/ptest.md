@@ -8,7 +8,7 @@ Python yüksək səviyyəli (insan dilinə daha yaxın) dil olduğu üçün əsa
 
 Python ingilis dilinə birbaşa tərcümədə böyük ilan kimi tərcümə oluna bilər. Lakin python öz adını BBC kanalında efirə gedən komedia janrındakı **Monty Python's Flying Circus**-dan götürmüşdür.
 
-Python 1956-cı ildə anadan olmuş Haarlem, Niderland-da anadan olmuş **Guido Van Rossum** tərəfindən yaradılmışdır.&#x20;
+Python 1956-cı ildə Haarlem, Niderland-da anadan olmuş **Guido Van Rossum** tərəfindən yaradılmışdır.&#x20;
 
 Python dilinin yaradılmasının təşəbbüskarı və səbəbkarı Guido olsa da, əlbətdə ki, python kimi möhtəşəm bir dili tək başına inkişaf etdirmək mümkün olmazdı.
 

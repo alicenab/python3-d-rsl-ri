@@ -21,4 +21,4 @@ Python interpreted dildir. Dolayısıyla yuxarıdakı cədvəldə Interpretation
 
 Python dilində kod yazmaq istəsəniz sizin python interpreter-ə ehtiyacınız olacaq. Python interpreter-i pulsuz yükləmək mümkündür.\
 \
-Tarixi səbəblərdən əlavə işləmək üçün əlavə interpreter-ə ehtiyacı olan dillər həmçinin **skriptinq dilləri** adlandırılıblar. Həmin dillərin source code-u isə **skriptlər** adlandırılıb.
+Tarixi səbəblərdən işləmək üçün əlavə interpreter-ə ehtiyacı olan dillər həmçinin **skriptinq dilləri** adlandırılıblar. Həmin dillərin source code-u isə **skriptlər** adlandırılıb.
