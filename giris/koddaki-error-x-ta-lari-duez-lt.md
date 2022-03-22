@@ -1,4 +1,2 @@
-# Koddakı error(xəta)-ları düzəlt
+# Comments (şərhlər)
 
-```
-```
