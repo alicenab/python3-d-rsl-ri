@@ -41,9 +41,9 @@ Dəyişənlər adlandırılan zaman bir neçə nüans nəzərə alınmalıdır, 
 
 1\) Dəyişənlər adlandırılarkən boşluqdan istifadə etmək olmaz, məsələn,
 
-menim adim, telebenin yasi kimi adlandırmalar etmək səhvdir.
+`menim adim`, `telebenin yasi` kimi adlandırmalar etmək səhvdir.
 
-2\) Dəyişənlər adlandırılarkən rəqəmdən başlamaq olmaz. Məsələn, 10telebe, 2defe kimi adlar səhvdir.&#x20;
+2\) Dəyişənlər adlandırılarkən rəqəmdən başlamaq olmaz. Məsələn, `10telebe`, `2defe` kimi adlar səhvdir.&#x20;
 
 3\) Dəyişənlər adlandırılarkən aşağıdakı sözlərdən istifadə etmək olmaz çünki onlar Python dilinin işləməsi üçün rezerv olunmuş xüsusi sözlərdir.
 
