@@ -1,4 +1,4 @@
-# sadə data tipləri
+# sadə data tiplər
 
 Python-da riyazi hesablamaları aparmaq üçün rəqəm və ədədlər əsasən üç data tipində təyin edilir: integer, float və complex.
 
@@ -18,13 +18,11 @@ Ekrana çıxan nəticə:
 23 23 -23 23
 ```
 
-Pythonda həmçinin `4.` və `.3` kimi yazaraq float rəqəmin və ya ədədin float tipində olduğunu başa düşmək mümkündür. `4.` `4.0` kimi, `.3` isə `0.3` kimi başa düşülür. Məntiqli olaraq əgər pythondan soruşsanız ki, `4.0` `4`-ə bərabərdirmi, deyəcək ki, bərabərdir. Məlumat üçün qeyd edək ki,  bu, bütün proqramlaşdırma dillərində belə deyil.
+Pythonda həmçinin `4.` və `.3` kimi yazaraq float rəqəmin və ya ədədin float tipində olduğunu başa düşmək mümkündür. `4.` `4.0` kimi, `.3` isə `0.3` kimi başa düşülür. Məntiqli olaraq əgər pythondan soruşsanız ki, `4.0` `4`-ə bərabərdirmi, deyəcək ki, bərabərdir. Məlumat üçün qeyd edək ki, bu, bütün proqramlaşdırma dillərində belə deyil.
 
 ```
 print(4. == 4)    #ekrana True çıxardacaq.
 ```
-
-
 
 Python3.6-cı versiyasından etibarən böyük ədədlərin oxunaqlılığını artırmaq məqsədilə ədədləri tanıdarkən \_ işarəsindən istifadə edilməsinə icazə verilir. Məsələn:
 
@@ -39,7 +37,7 @@ print(0x123) #ekrana 291 çıxardır;
 print(0o123) #ekrana 83 çıxardır. 
 ```
 
-print() funksiyası ekrana həmişə daha oxunaqlı yazı çap etdiyi üçün,  böyük ədədləri (məsələn, 3.14 vurulsun 10 üstü 20) göstərərkən E hərfindən istifadə edir. Böyük ədədlər təyin edilərkən 10 üstü olan rəqəmlər (exponent value) integer tipində olmalıdır. Lakin vurulduğu ədəd (base value) rasional ola bilər. Məsələn:
+print() funksiyası ekrana həmişə daha oxunaqlı yazı çap etdiyi üçün, böyük ədədləri (məsələn, 3.14 vurulsun 10 üstü 20) göstərərkən E hərfindən istifadə edir. Böyük ədədlər təyin edilərkən 10 üstü olan rəqəmlər (exponent value) integer tipində olmalıdır. Lakin vurulduğu ədəd (base value) rasional ola bilər. Məsələn:
 
 ```
 print(3.14*10**20)  #ekrana 3.14e+20 çıxardır.
@@ -57,12 +55,11 @@ print(True>False) # Ekrana True çıxardacaq.
 
 Əlavə olaraq pythonda yoxluğu bildirən bir data tipi də mövcuddur. Bu `None` adlanır. Bir şeyin olub-olmamasını `None` ilə yoxlamaq mümkündür. Həmçinin, müvəqqəti olaraq hər hansı bir dəyişəni təyin etmək lazımdırsa və ona hansı dəyəri təyin edəcəyinizi bilmirsinizsə, həmin dəyişənə `None` dəyərini təyin edə bilərsiniz.
 
-
-
-Digər bir data tipi isə **string** adlanır. Stringlər vasitəsilə hərfləri və cümlələri ifadə etmək mümkündür.
+Digər bir data tipi isə **string** adlanır. Stringlər vasitəsilə hərfləri və cümlələri ifadə etmək mümkündür. Stringlər kod içində cüt dırnaq və ya tək dırnaq içində yazıla bilərlər. Bununla bağlı daha ətraflı [print-funksiyasi.md](print-funksiyasi.md "mention") səhifəsindən tanış ola bilərsiniz.
 
 ```
-print('a'*3)
+print(4*3)    # ekrana 12 çıxardır
+print('4'*3)  # ekrana 444 çıxardır
 ```
 
-Yuxarıda göstərilmiş kod parçası düzgündür. Hesablama nəticəsi olaraq ekrana 3 ədəd a hərfi `aaa` çıxacaqdır.&#x20;
+Yuxarıda göstərilmiş kod parçası düzgündür. Məntiqli olaraq da rəqəmin rəqəmə hasili zamanı rəqəm gözləyirik. Bir hərfdən 3 dəfə dediyimiz zaman isə həmin hərfdən 3 dəfə ekrana çap olunur.
