@@ -17,6 +17,7 @@
 * [print() funksiyası](giris/print-funksiyasi.md)
 * [Variables (dəyişənlər)](giris/d-yis-nl-r.md)
 * [Shortcut operators](giris/shortcut-operators.md)
+* [Type casting](giris/type-casting.md)
 
 ## Class-lar
 
