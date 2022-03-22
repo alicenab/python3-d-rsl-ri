@@ -15,7 +15,8 @@
 * [sadə data tiplər](giris/sad-data-tipl-r.md)
 * [sadə riyazi hesablamalar](giris/sad-riyazi-hesablamalar.md)
 * [print() funksiyası](giris/print-funksiyasi.md)
-* [Dəyişənlər](giris/d-yis-nl-r.md)
+* [Variables (dəyişənlər)](giris/d-yis-nl-r.md)
+* [Shortcut operators](giris/shortcut-operators.md)
 
 ## Class-lar
 

@@ -1,13 +1,13 @@
-# Dəyişənlər
+# Variables (dəyişənlər)
 
-Hər hansı dəyəri müəyyən adda komputerin RAM yaddaşında müəvvəqi olaraq yadda saxlamaq üçün dəyişənlərdən istifadə olunur. Məsələn&#x20;
+Hər hansı dəyəri müəyyən adda komputerin RAM yaddaşında müəvvəqi olaraq yadda saxlamaq üçün dəyişənlərdən istifadə olunur. Dəyişənlər təyin olunarkən bərabərin sağ tərəfindəki vahid sol tərəfə təyin olunur. Məsələn&#x20;
 
 ```
 a=3
 print(a)
 ```
 
-Yuxarıdakı misalda birinci növbədə 1 dəyərinə sahib olan integeri komputerin RAM yaddaşında müəyyən bir bölgədə yadda saxladım və ona a adını verdim. Daha sonra isə onun adını çağıraraq içindəki dəyəri ekrana yazdım.&#x20;
+Yuxarıdakı misalda birinci növbədə `1` dəyərinə sahib olan integeri `a` adı verdiyim bir dəyişənə təyin etdim. Daha sonra isə onun adını çağıraraq içindəki dəyəri ekrana yazdım.&#x20;
 
 Dəyişənlər yazdığımız kodları daha oxunaqlı və sadə formaya salmaq üçün istifadə olunurlar.
 
@@ -50,4 +50,51 @@ Dəyişənlər adlandırılan zaman bir neçə nüans nəzərə alınmalıdır, 
 ```
 ['False', 'None', 'True', 'and', 'as', 'assert', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
 ```
+
+Dəyişənlərin adları ingilis dilində olmaq məcburiyyətində deyil. Məsələn, aşağıdakı formada dəyişən adlandırmaları qanuna uyğundur
+
+```
+Adiós_Señora, sûr_la_mer, Einbahnstraße, переменная
+```
+
+Gəlin başqa bir misala baxaq
+
+```
+ad="Məmməd"
+soyad="Məmmədov"
+yas=22
+print(ad, soyad, yas)
+```
+
+Yuxarıdakı misalda Məmməd adını ad dəyişəninə, Məmmədov soyadını soyad dəyişəninə, 22 ədədini isə yas dəyişəninə təyin etmişəm, bundan sonra isə print() funksiyası vasitəsilə əvvəlcədən təyin etdiyim dəyişənləri ekrana çap etmişəm. Nəticə aşağıdakı kimidir.
+
+```
+Məmməd Məmmədov 22
+```
+
+
+
+Dəyişənlərə yenidən dəyərlərin təyin olunması.
+
+```
+istenilen=4
+istenilen=5+1
+print(istenilen)     #ekrana 6 yazılacaq.
+istenilen2=8
+print(istenilen*istenilen2)    #ekrana 
+```
+
+Yuxarıdakı misalda 1-ci sətirdə `4` ədədi təyin olunmuş `istenilen` adlı dəyişənə 2-ci sətirdə `5+1` təyin olunmuşdur. Kompüter kodu sətir bə sətir oxuduğu üçün ikinci sətirdə baş verən təyinetmə birincini əvəzləyəcəkdir. Dolayısıyla 3-cü sətirin nəticəsi olaraq ekrana 5+1-in nəticəsi, yəni 6 çıxacaqdır.&#x20;
+
+4-cü sətirdə `istenilen2` adlı dəyişənə 8 integerini təyin etmişəm. 5-ci sətirdə `print()` funksiyası vasitəsilə istenilen dəyişəninin `istenilen2` dəyişəni ilə hasilini ekrana çap etmişəm. Ekrana 6\*8, yəni 48 cavabı çıxmışdır.
+
+
+
+
+
+
+
+
+
+
 
