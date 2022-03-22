@@ -18,6 +18,8 @@
 * [Variables (dəyişənlər)](giris/d-yis-nl-r.md)
 * [Shortcut operators](giris/shortcut-operators.md)
 * [Type casting](giris/type-casting.md)
+* [easy level string manipulation](giris/easy-level-string-manipulation.md)
+* [input() funsiyası](giris/input-funsiyasi.md)
 
 ## Class-lar
 
