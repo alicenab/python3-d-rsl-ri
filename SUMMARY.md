@@ -20,6 +20,8 @@
 * [Type casting](giris/type-casting.md)
 * [easy level string manipulation](giris/easy-level-string-manipulation.md)
 * [input() funsiyası](giris/input-funsiyasi.md)
+* [Conditional operators (if,elif,else)](giris/conditional-operators-if-elif-else.md)
+* [Loops(döngülər) while,for](giris/loops-doenguel-r-while-for.md)
 
 ## Class-lar
 

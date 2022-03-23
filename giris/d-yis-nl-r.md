@@ -88,6 +88,13 @@ Yuxarıdakı misalda 1-ci sətirdə `4` ədədi təyin olunmuş `istenilen` adl�
 
 4-cü sətirdə `istenilen2` adlı dəyişənə 8 integerini təyin etmişəm. 5-ci sətirdə `print()` funksiyası vasitəsilə istenilen dəyişəninin `istenilen2` dəyişəni ilə hasilini ekrana çap etmişəm. Ekrana 6\*8, yəni 48 cavabı çıxmışdır.
 
+Eyni vaxtda 1-dən çox dəyişənə dəyər təyin etmək mümkündür. Məsələn
+
+```
+x, y, z = 5, 10, 8
+print(x,y,z) # ekrana 5, 10, 8 çap edir.
+```
+
 
 
 
