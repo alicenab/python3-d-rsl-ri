@@ -114,7 +114,7 @@ Tutalım ki, 1-dən 10-a qədər cüt ədədləri ekrana çap edən proqram yazm
 
 ```python
 for i in range(0,10):
-    if i%2==0:
+    if i%2==0: # ikiyə bölündükdə qalıqda 0 alınan ədəd cüt ədəddir.
         print(i)
         
 ""
