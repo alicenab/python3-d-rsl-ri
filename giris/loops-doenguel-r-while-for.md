@@ -50,7 +50,7 @@ yasinizi daxil edin: 20
 icaze var
 ```
 
-## For loop, (for döngüsü)
+## For loop, (for döngüsü) və range() funksiyası
 
 For bizə müəyyən bir siyahıdakı elementlərin hər biri üzrə işləmək imkanı verən döngü növüdür.
 
@@ -94,9 +94,58 @@ icaze var
 4
 ```
 
+Yuxarıdakı kodu bu şəkildə də yazmaq mümkündür. İkisi də tamamilə eyni şeydir.
 
+```python
+siyahi = [0,1,2,3,4]
 
+for c in siyahi:
+    yas = input("yasinizi daxil edin: ")
+    if int(yas)>=18:
+        print("icaze var")
+    else:
+        print("icaze yoxdur")
+    print(c)
+```
 
+### range() funskiyasının əlavə imkanları
+
+Tutalım ki, 1-dən 10-a qədər cüt ədədləri ekrana çap edən proqram yazmaq lazımdır.
+
+```python
+for i in range(0,10):
+    if i%2==0:
+        print(i)
+        
+""
+Ekrana çıxan nəticə.
+
+0
+2
+4
+6
+8
+""
+```
+
+**NOT**; range() funksiyası heçvaxt son ədədi siyahıya salmır.
+
+Digər koddan fərqli olaraq yuxarıdakı kodda range() funksiyası içinə iki ədəd vermişəm. Onlardan birincisi siyahının başlandığı, digəri isə bitdiyi yerdir. range() funksiyasına üçüncü arqumenti də vermək mümkündür, üçüncü arqument range() funksiyasında başdan sona addım sayını təyin edir. Yəni normalda rəqəmlər bir-bir artırdısa, biz bunu dəyişə bilərik. Dolayısıyla yuxarıdakı nəticəni verən kodu daha qısa şəkildə aşağıdakı formada yazmaq mümkündür.
+
+```python
+for i in range(0,10,2):
+    print(i)
+
+''' 
+Ekrana çıxan nəticə.
+
+0
+2
+4
+6
+8
+'''
+```
 
 
 
