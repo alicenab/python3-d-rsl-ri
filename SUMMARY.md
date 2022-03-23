@@ -22,6 +22,7 @@
 * [input() funsiyası](giris/input-funsiyasi.md)
 * [Conditional operators (if,elif,else)](giris/conditional-operators-if-elif-else.md)
 * [Loops(döngülər) while,for](giris/loops-doenguel-r-while-for.md)
+* [Break, continue](giris/break-continue.md)
 
 ## Class-lar
 

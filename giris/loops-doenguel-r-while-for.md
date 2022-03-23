@@ -147,5 +147,22 @@ Ekrana çıxan nəticə.
 '''
 ```
 
+`range()` funksiyasında  geri addımlamaq da mümkündür. Məsələn.
+
+```
+for i in range(10,0,-2):
+    print(i)
+
+''' 
+Ekrana çıxan nəticə.
+
+10
+8
+6
+4
+2
+'''
+```
+
 
 
