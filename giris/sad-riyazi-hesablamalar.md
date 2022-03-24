@@ -28,17 +28,17 @@ Bu qayda digər işarələrə də aiddir. Gələcəkdə həmin işarələrin ba�
 
 
 
-`+`, toplama üçündür
+`+`, toplama üçündür,
 
 integer və float qaydasına tabedir.
 
 \
-`-`, çıxma üçündür
+`-`, çıxma üçündür,
 
 integer və float qaydasına tabedir.
 
 \
-`*`, **multiplication operator** adlanır, vurma üçündür&#x20;
+`*`, **multiplication operator** adlanır, vurma üçündür&#x20;,
 
 integer və float qaydasına tabedir.
 
