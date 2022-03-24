@@ -24,6 +24,9 @@
 * [Loops(döngülər) while,for](giris/loops-doenguel-r-while-for.md)
 * [Break, continue](giris/break-continue.md)
 * [Logic və bit operatorları](giris/logic-v-bit-operatorlari.md)
+* [Lists](giris/lists.md)
+* [Functions](giris/functions.md)
+* [Tuple and dictionary](giris/tuple-and-dictionary.md)
 
 ## Class-lar
 
