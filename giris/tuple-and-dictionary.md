@@ -1,8 +1,8 @@
 # Tuple and dictionary
 
-Sequence types və mutability haqqında, for ilə içində iterate edə bildiyimiz hər bir data tipi sequental data type sayılır. Məsələn listlər. Listlər həm də mutable data type-dır. Yəni proqram işlədiyi müddətdə içi dəyişə bilər.
+Sequence types və mutability haqqında for ilə içində iterate edə bildiyimiz hər bir data tipi sequental data type sayılır. Məsələn, listlər. Listlər eyni zamanda mutable data type-dır. Yəni proqram işlədiyi müddətdə içi dəyişə bilər.
 
-Proqram işlədiyi müddətdə içi dəyişəbilməyən tiplər də mövcuddur. Məsələn tuple. Tuple-ı pythonda iki cür tanıda bilərik.
+Proqram işlədiyi müddətdə içi dəyişə bilməyən tiplər də mövcuddur. Məsələn, tuple. Tuple-ı pythonda iki cür tanıda bilərik:
 
 ```
 tuple_1 = (1, 2, 4, 8)
@@ -14,7 +14,7 @@ print(tuple_2)
 
 Tuple-ın hər bir elementi başqa data tipinə aid ola bilər.
 
-Tək elementi olan tuple-lar aşağıdakı formada təyin olunurlar.
+Tək elementi olan tuple-lar aşağıdakı formada təyin olunurlar:
 
 ```
 test_1 = (1, )
