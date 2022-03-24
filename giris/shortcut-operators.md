@@ -1,4 +1,4 @@
-# Shortcut operators
+# Shortcut operatorları
 
 Xatırlıyırsınızsa, aritmetik operatorlardan daha öncə bəhs etmişdik. (bax.  [sad-riyazi-hesablamalar.md](sad-riyazi-hesablamalar.md "mention"))
 
