@@ -99,6 +99,14 @@ Global səviyyədə (0 indentation) funksiya daxilindəki variable-ı çağırma
 Özü özünü çağıran funksiyalara rekursiv funksiyalar deyilir
 
 ```
+def faktorial(n):
+    if n < 0:
+        return None
+    if n < 2:
+        return 1
+    return n * faktorial(n - 1)
+
+print(faktorial(3)) # cavab 3*2*1 = 6
 ```
 
 
