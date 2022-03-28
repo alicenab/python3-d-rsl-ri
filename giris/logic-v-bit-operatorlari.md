@@ -31,12 +31,49 @@ Təsəvvür edin ki, böyük bir kod yazmısınız və həmin kodun nəticəsi 6
 
 Digər hesablama operatorlarında olduğu kimi, bu operatorlar da shortcutla istifadə edilə bilərlər.
 
-| `x = x & y`  | `x`` ``&=`` ``y`  |
-| ------------ | ----------------- |
+|  `x = x & y` |  `x`` ``&=`` ``y` |
+| :----------: | :---------------: |
 | `x = x \| y` | `x`` ``\|=`` ``y` |
-| `x = x ^ y`  | `x`` ``^=`` ``y`  |
+|  `x = x ^ y` |  `x`` ``^=`` ``y` |
 
+## Bitshift operatorları
 
+Hərşeyi başa düşmək üçün aşağıdakı kod nümunəmə baxmaq mümkündür.
 
+```python
+i = 15               #b'00000000000000000000000000001111' - original deyer
+j = 22               #b'00000000000000000000000000010110' - original deyer
 
+my_conj = i&j        #b'00000000000000000000000000000110' - her ikisinin 1 olanlari
+my_xor = i^j         #b'00000000000000000000000000011001' - her ikisinin 1 olmayani
+my_disj = i|j        #b'00000000000000000000000000011111' - her ikisinin 0 olmayani
+my_neg1 = ~i         #b'11111111111111111111111111110000' - i-nin tersi, 2nin complementi
+my_neg2 = ~j         #b'11111111111111111111111111101001' - j-nin tersi, 2nin complementi
+
+left_shift = i<<2    #b'00000000000000000000000000111100' - 2 dəfə sola sürüşür, soldakı 2 rəqəm sağa keçir.
+right_shift = i>>2   #b'00000000000000000000000000000011' - 2 dəfə sağa sürüşür, yox olanların yerinə 0 yazılır
+
+print("i: ", i,
+      "\nj: ", j,
+      "\nmy_conj: ", my_conj,
+      "\nmy_xor: ", my_xor,
+      "\nmy_disj: ", my_disj,
+      "\nmy_neg1: ", my_neg1,
+      "\nmy_neg2: ", my_neg2,
+      "\nleft_shift: ", left_shift,
+      "\nright_shift", right_shift
+        )
+```
+
+Right shift və left shiftləri bu formada daha sürətli hesablamaq olar:&#x20;
+
+```python
+var=32
+var = var>>4
+print(var) # cavab 2. 32/2^4=32/16=2
+
+var = 32
+var = var << 4
+print(var) #cavab 512. 32*2^4=32*16=512
+```
 
