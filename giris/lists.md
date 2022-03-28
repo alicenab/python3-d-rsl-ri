@@ -60,14 +60,20 @@ Slicing-də sol tərəf göstərilməzsə, listin başlanğıcı, sağ tərəf g
 
 ```python
 my_list = [10, 8, 6, 4, 2]
-print(my_list[3:])
-print(my_list[:3])
+print(my_list[3:])   # siyahının 3-cü indeksindən sonrakı dəyərləri əhatə edir
+print(my_list[:3])   # siyahının 3-cü indeksindən əvvəlki və üçüncü indeksindəki dəyərləri əhatə edir.
 
-del my_list[:]
-my_list.append(1)
+del my_list[:]       # siyahının bütün indekslərindəki elementləri silir.
+my_list.append(1)    # siyahıya sıfırıncı elementdən 1 dəyərini daxil edir.
 print(my_list)
 
-del my_list
+# .insert vasitəsilə siyahının istədiyimiz indeksinə istədiyimiz dəyəri daxil edə bilərik.
+my_list.insert(0,0)  # sıfırıncı indeksə 0 dəyərini daxil et
+my_list.insert(0,-1) # sıfırncı indeksə -1 dəyərini daxil et. (bundan qabaqki dəyərlər sağa sürüşür)
+my_list.insert(3,2)  # üçüncü indeksə 2 dəyərini daxil et
+print(my_list)       # [-1, 0, 1, 2]
+ 
+del my_list          # my_list siyahısını silir.
 print(my_list)
 
 # Ekrana çıxacaq:
@@ -75,11 +81,11 @@ print(my_list)
 [4, 2]
 [10, 8, 6]
 [1]
+[-1, 0, 1, 2]
 Traceback (most recent call last):
-  File "kod.py", line 10, in <module>
+  File "c:\Users\alicenab\Desktop\test.py", line 16, in <module>
     print(my_list)
 NameError: name 'my_list' is not defined
-
 '''
 ```
 
