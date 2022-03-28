@@ -58,7 +58,7 @@ Tapdiniz!
 
 Digər bir sintaktik şəkər isə `while-else` və `for-else`-dir. Python dili sizə imkan verir ki, döngülərdən sonra else açar sözünü işlədək. Bu bir çox yeni başlayanlar üçün çətin gələ bilər. Sadə izahı aşağıdakı kimidir.
 
-Əgər hər hansı döngüdə kod break olunmazsa, bu zaman else içindəki kod işə düşsün.
+Əgər hər hansı döngüdə kod break olunmazsa, bu zaman else içindəki kod işə düşsün. Dolayısıyla döngü içində break olunmayan bütün hallarda həm döngünün içindəki kod həm də else içindəki kod işə düşür.
 
 ```python
 i = 0

@@ -1,10 +1,10 @@
-# Loops (döngülər) while,for
+# Loops(döngülər) while,for
 
 Təsəvvür edin ki, [conditional-operators-if-elif-else.md](conditional-operators-if-elif-else.md "mention") səhifəsində izah olunduğu formada yaş sorğulamalısınız. Lakin 1 şəxsdən yox, 100 şəxsdən. Bunun üçün 200 sətirə yaxın kod yazmağa ehtiyac yoxdur, həmin kodu qısa formada da yazmaq mümkündür. Bunun üçün döngülərdən istifadə etmək lazımdır. Döngülər bizə təkrarlanan işləri görməyə kömək edir.
 
 ## While loop, (While döngüsü)
 
-&#x20;Döngüsünün şərti ifadəsi aşağıdakı kimidir. Bir şərt uyğun olduğu halda, while içindəki kod  həmin şərt doğru olmayana qədər çalışmağa davam edir.
+Döngüsünün şərti ifadəsi aşağıdakı kimidir. Bir şərt uyğun olduğu halda, while içindəki kod həmin şərt doğru olmayana qədər çalışmağa davam edir.
 
 ```python
 while şərti_ifadə:
@@ -128,9 +128,9 @@ Ekrana çıxan nəticə:
 ""
 ```
 
-**NOT**; range() funksiyası heç vaxt son ədədi siyahıya salmır.
+**NOT**; range() funksiyası heç vaxt son ədədi nəzərə almır.
 
-Digər koddan fərqli olaraq yuxarıdakı kodda range() funksiyası içinə iki ədəd vermişik. Onlardan birincisi siyahının başlandığı, digəri isə bitdiyi yerdir. range() funksiyasına üçüncü arqumenti də vermək mümkündür, üçüncü arqument range() funksiyasında başdan sona addım sayını təyin edir. Yəni normalda rəqəmlər bir-bir artırdısa, biz bunu dəyişə bilərik. Dolayısıyla yuxarıdakı nəticəni verən kodu daha qısa şəkildə aşağıdakı formada yazmaq mümkündür:
+Digər koddan fərqli olaraq yuxarıdakı kodda `range()` funksiyası içinə iki ədəd vermişik. Onlardan birincisi siyahının başlandığı, digəri isə bitdiyi yerdir. `range()` funksiyasına üçüncü arqumenti də vermək mümkündür, üçüncü arqument range() funksiyasında başdan sona addım sayını təyin edir. Yəni normalda rəqəmlər bir-bir artırdısa, biz bunu dəyişə bilərik. Dolayısıyla yuxarıdakı nəticəni verən kodu daha qısa şəkildə aşağıdakı formada yazmaq mümkündür:
 
 ```python
 for i in range(0,10,2):
@@ -147,7 +147,7 @@ Ekrana çıxan nəticə:
 '''
 ```
 
-`range()` funksiyasında  geri addımlamaq da mümkündür. Məsələn,
+`range()` funksiyasında geri addımlamaq da mümkündür. Məsələn,
 
 ```
 for i in range(10,0,-2):
@@ -163,6 +163,3 @@ Ekrana çıxan nəticə:
 2
 '''
 ```
-
-
-

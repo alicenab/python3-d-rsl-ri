@@ -81,7 +81,7 @@ istenilen=4
 istenilen=5+1
 print(istenilen)     #ekrana 6 yazılacaq.
 istenilen2=8
-print(istenilen*istenilen2)    #ekrana 
+print(istenilen*istenilen2)    #ekrana 48 yazacaq
 ```
 
 Yuxarıdakı misalda 1-ci sətirdə `4` ədədi təyin olunmuş `istenilen` adlı dəyişənə 2-ci sətirdə `5+1` təyin olunmuşdur. Kompüter kodu sətir bə sətir oxuduğu üçün ikinci sətirdə baş verən təyinetmə birincini əvəzləyəcəkdir. Dolayısıyla 3-cü sətirin nəticəsi olaraq ekrana 5+1-in nəticəsi, yəni 6 çıxacaqdır.&#x20;
