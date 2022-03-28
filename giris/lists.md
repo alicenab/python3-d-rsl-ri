@@ -97,3 +97,93 @@ my_list = [0, 1, 2, 3, 4]
 print(5 not in my_list) # True
 print(1 in my_list)     # True
 ```
+
+## Multidimentional lists (Çoxölçülü siyahılar)
+
+Hər hansı elementinin içində list saxlayan listlərə çoxölçülü listlər deyilir. Məsələn.
+
+```python
+# 2 elementi, hər elementinin isə özlüyündə 3 elementi olan çoxölçülü siyahı
+my_list = [[1,2,3],[4,5,6]]
+print(my_list)
+
+# siyahının ilkin 2 elementi üzrə dəyərlərin ekrana çap olunması
+for i in my_list:
+    print(i)
+
+# siyahının dərin elementlərinin ekrana çap olunması
+for i in my_list:
+    for j in i:
+        print(j,end=' ')
+    print()
+```
+
+Təsəvvür edin ki, 8-in 8-ə ölçüsündə şahmat taxtasını kodlaşdırmaq istəyirsiniz. İçində 8 ədəd simvol olan stringi ekrana yeni sətirdən 8 dəfə çap etsəniz hansısa nəticəni əldə edə bilərsiniz. Ancaq daha qısa yollar da var. Məsələn 8 ədəd X hərfini ekrana aşağıdakı kimi çap etmək mümkündür.&#x20;
+
+```python
+setir = []
+
+for i in range(8):
+    setir.append("X")
+
+print(setir)
+# Ekrana cap edecek:
+# ['X', 'X', 'X', 'X', 'X', 'X', 'X', 'X']
+```
+
+Bu kimi situasiyalar üçün list comprehension deyilən bir metoddan istifadə olunur ki, kod daha effektiv olsun. Məsələn, aşağıdakı kod yuxarıdakı ilə eyni əhəmiyyət kəsb edir:
+
+```python
+setir = ['X' for i in range(8)]
+print(setir)
+
+# Ekrana çap edəcək:
+# ['X', 'X', 'X', 'X', 'X', 'X', 'X', 'X']
+```
+
+Bu məntiqlə şahmat taxtasına şah fiqurlarını aşağıdakı formada əlavə etmək mümkündür:
+
+```python
+masa = [['x' for i in range(8)] for j in range(8)]
+sah = 'S'
+
+masa[0][3] = sah
+masa[7][3] = sah
+
+for setir in masa:
+    print(setir)
+
+'''
+Ekrana çap olunacaq:
+
+['x', 'x', 'x', 'S', 'x', 'x', 'x', 'x']
+['x', 'x', 'x', 'x', 'x', 'x', 'x', 'x']
+['x', 'x', 'x', 'x', 'x', 'x', 'x', 'x']
+['x', 'x', 'x', 'x', 'x', 'x', 'x', 'x']
+['x', 'x', 'x', 'x', 'x', 'x', 'x', 'x']
+['x', 'x', 'x', 'x', 'x', 'x', 'x', 'x']
+['x', 'x', 'x', 'x', 'x', 'x', 'x', 'x']
+['x', 'x', 'x', 'S', 'x', 'x', 'x', 'x']
+'''
+```
+
+Başqa bir nümunəyə baxaq. Aşağıdakı kodun birinci sətrində 10-a dək olan rəqəmlərin kvadratlarından ibarət olan list kvadratlar adındakı dəyişənə tanımlanır. 3-cü sətirdə isə kvadratlar listinin içindəki hansı element ikiyə bölündükdə qalıqda sıfır qalarsa, həmin elementlər tek\_kvadratlar adındakı dəyişənə tanımlanır:
+
+```python
+kvadratlar = [x ** 2 for x in range(10)]
+print(kvadratlar)
+tək_kvadratlar = [x for x in kvadratlar if x % 2 != 0 ]
+print(tək_kvadratlar)
+```
+
+Üçölçülü siyahıya misal:
+
+```
+kubik = [[['x' for x in range(3)] for y in range(3)] for z in range(3)]
+print(kubik)
+# Ekrana aşağıdakı nəticəni çap edəcək:
+# [[['x', 'x', 'x'], ['x', 'x', 'x'], ['x', 'x', 'x']], [['x', 'x', 'x'], ['x', 'x', 'x'], ['x', 'x', 'x']], [['x', 'x', 'x'], ['x', 'x', 'x'], ['x', 'x', 'x']]]
+```
+
+
+

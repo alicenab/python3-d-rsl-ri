@@ -19,7 +19,7 @@ def funksiyanın_adı():
 
 python interpreteri işə düşdükdə pass kəliməsini gördükdə başa düşür ki, heçnə icra etmək lazım deyil və olduğu kimi davam edir. Yuxarıdakı misal o zaman proqramistlər tərəfindən istifadə olunur ki, hansısa funksiya yazmağa qərar versələr də onun hansı işlər görəcəyini hələ dəqiqləşdirmirlər. Funksiya yaratmaq fikri ağıldan çıxmasın deyə yuxarıdaki kimi qeyd edirlər.
 
-Funksiyanın arqumenti olmaya da bilər, bir arqumenti də ola bilər, 1-dən çox arqumenti də ola bilər. Funksiya daxilində işlənmiş dəyişənlər funksiyanın lokal dəyişənləri (local variables) adlanırlar. Funksiyanın xaricində işlədilmiş dəyişənlər isə (0 indentation level) global variable adlanırlar. Funksiyalar adətən return açar sözü vasitəsilə nəticəni geri qaytarırlar. return açar sözü işlənmiş hər bir funksiyanı 5-ci sətirdəki kimi hansısa variable-a təyin etmək mümkündür. Aşağıdakı kodu ətraflı nəzərdən keçirək.
+Funksiyanın arqumenti olmaya da bilər, bir arqumenti də ola bilər, 1-dən çox arqumenti də ola bilər. Funksiya daxilində işlənmiş dəyişənlər funksiyanın lokal dəyişənləri (local variables) adlanırlar. Funksiyanın xaricində işlədilmiş dəyişənlər isə (0 indentation level) global variable adlanırlar. Funksiyalar adətən return açar sözü vasitəsilə nəticəni geri qaytarırlar. Çox söz deyib heç bir məna verməyən insanlar kimi, içində return açar sözü olmayan funksiyalar  return açar sözü işlənmiş hər bir funksiyanı 5-ci sətirdəki kimi hansısa variable-a təyin etmək mümkündür. Aşağıdakı kodu ətraflı nəzərdən keçirək.
 
 1-ci sətirdə topla adında funksiya yaratmışam və qeyd etmişəm ki default olaraq bu funksiya 2 arqument qəbul edəcək və funksiyaya daxil olan arqumentləri müvəqqəti olaraq sag və sol adlandırmaq olar.
 
@@ -97,6 +97,17 @@ print(var)
 Global səviyyədə (0 indentation) funksiya daxilindəki variable-ı çağırmaq istəyəndə typeerror verir.
 
 Özü özünü çağıran funksiyalara rekursiv funksiyalar deyilir
+
+```
+```
+
+
+
+
+
+
+
+
 
 
 
