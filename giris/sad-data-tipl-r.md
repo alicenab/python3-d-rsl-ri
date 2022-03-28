@@ -55,9 +55,12 @@ print(True>False) # Ekrana True çıxardacaq.
 
 Əlavə olaraq pythonda yoxluğu bildirən bir data tipi də mövcuddur. Bu `None` adlanır. Bir şeyin olub-olmamasını `None` ilə yoxlamaq mümkündür. Həmçinin, müvəqqəti olaraq hər hansı bir dəyişəni təyin etmək lazımdırsa və ona hansı dəyəri təyin edəcəyinizi bilmirsinizsə, həmin dəyişənə `None` dəyərini təyin edə bilərsiniz.
 
-Digər bir data tipi isə **string** adlanır. Stringlər vasitəsilə hərfləri və cümlələri ifadə etmək mümkündür. Stringlər kod içində cüt dırnaq və ya tək dırnaq içində yazıla bilərlər. Bununla bağlı daha ətraflı [print-funksiyasi.md](print-funksiyasi.md "mention") səhifəsindən tanış ola bilərsiniz.
+Digər bir data tipi isə **string** adlanır. Stringlər vasitəsilə hərfləri və cümlələri ifadə etmək mümkündür. Stringlər kod içində cüt dırnaq və ya tək dırnaq içində yazıla bilərlər. Bunun üçün hərfin və ya sözün sağ və sol tərəfi ya tək ya cüt dırnaqla bağlanmalıdır. Biri tək digəri cüt dırnaqla bağlarsa xəta yaranır. Müxtəlif quruluşlu stringlərin ekrana çap olunmasıyla bağlı daha ətraflı [print-funksiyasi.md](print-funksiyasi.md "mention") səhifəsindən tanış ola bilərsiniz.
 
 ```
+print("Salam dünya!")
+print('Salam dünya!')
+print('Salam dünya!") # xəta verəcək
 print(4*3)    # ekrana 12 çıxardır
 print('4'*3)  # ekrana 444 çıxardır
 ```
