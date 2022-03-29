@@ -36,6 +36,36 @@ else:
     print("Zero")
 ```
 
+Yuxarıda izah elədiyim xəta tipləri işlənmiş bir kod parçasına nəzər yetirək. Əgər istifadəçi sıfır daxil edərsə bu həm ValueError-un həm də ZeroDivisionError-un yaranmasına səbəb olacaq. Lakin kodun yazılışında ValueError birinci gəldiyi üçün istifadəçi sıfır daxil edərsə ekrana `Bad input...` yazısı çıxacaq:
+
+```python
+try:
+    value = int(input("Enter a value: "))
+    print(value/value)
+except ValueError:
+    print("Bad input...")
+except ZeroDivisionError:
+    print("Very bad input...")
+except:
+    print("Booo!")
+```
+
+Bir sətirdə eyni vaxtda iki xəta üçün də eyni kod yazmaq mümkündür. Məsələn aşağıdakı misala baxaq:
+
+```python
+while True:
+    try:
+        number = int(input("integer tipində bir dəyər daxil edin: "))
+        print(5/number)
+        break
+    except (ValueError, ZeroDivisionError):
+        print("Yalnış dəyər daxil olunub, və ya sıfıra bölmə xətası yaranıb.")
+    except:
+        print("Üzr istəyirik, bilinməyən bir xəta baş verdi.")
+```
+
+
+
 Proqramı debug etmək onun icrasını addım-addım izləyərək səhvlərin tapılmasına deyilir. İDE-lər (məsələn, visual studio code, pycharm, İDLE və s.) özləri debug alətlərinə sahib olurlar. Lakin uzun müddətdir işlədilən başqa bir debug metodu da var. Buna **print debugging** deyilir.&#x20;
 
 Print debugging dedikdə proqramçının kodun müxtəlif hissələrində variable-ları print edərək kodun icrası zamanı variable-ların vəziyyətinə nəzarət etməsi başa düşülür.
