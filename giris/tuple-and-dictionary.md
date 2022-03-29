@@ -56,7 +56,45 @@ print(10 in my_tuple)       # True
 print(-10 not in my_tuple)  # True
 ```
 
+## Dictionaries (lüğətlər)
 
+Dəyərləri saxlaya biləcəyimiz digər bir data tipi isə lüğətlərdir. Python 3.6 versiyasından etibarən lüğətlər ordered (sequential) və mutable data tipləri sayılırlar. Lüğətlər {} fiqurlu mötərizələr vasitəsilə tanıdılır, key (açar) və value (dəyər)lərdən ibarət olurlar. Məsələn:
 
+```python
+nümunə_1 = {'maşın':'car', 'test':'test', 'kitab':'book'} # standart dictionary tanıtımı
+nümunə_2 = {} # boş dictionary bu cür tanıdılır
+nümunə_3 = {'Ali':1234, 'Mammad':12345, 'Aziz':123456, 'Orxan':'test'} # dictionary içində bir neçə fərqli data tipi ola bilər
+nümunə_4 = {            # mürəkkkəb dictionary-ni alt-alta yazmaq daha rahatdır.
+            '1':{'ad':'Ali', 'soyad':'aliyev'},
+            '2':{'ad':'Mammad','soyad':'Mammadov'}
+            }
+# hər bir lüğətin necə çap olunduğuna baxaq
+print(nümunə_1, nümunə_2, nümunə_3, nümunə_4)
 
+print("\nnümunə_1 variable:")
+for açarsöz in nümunə_1.keys():
+    print(açarsöz + '->' + nümunə_1[açarsöz])
+
+print("\nnümunə_4 variable:")
+for açarsöz,dəyər in nümunə_4.items():
+    for dəyər2 in dəyər.keys():
+        print(açarsöz, dəyər2, dəyər[dəyər2])
+```
+
+Yuxarıdakı kod ekrana aşağıdakı nəticəni çap edəcək:
+
+```python
+{'maşın': 'car', 'test': 'test', 'kitab': 'book'} {} {'Ali': 1234, 'Mammad': 12345, 'Aziz': 123456, 'Orxan': 'test'} {'1': {'ad': 'Ali', 'soyad': 'aliyev'}, '2': {'ad': 'Mammad', 'soyad': 'Mammadov'}}
+
+nümunə_1 variable:
+maşın->car
+test->test
+kitab->book
+
+nümunə_4 variable:
+1 ad Ali
+1 soyad aliyev
+2 ad Mammad
+2 soyad Mammadov
+```
 
