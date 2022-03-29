@@ -68,8 +68,18 @@ nümunə_4 = {            # mürəkkkəb dictionary-ni alt-alta yazmaq daha raha
             '1':{'ad':'Ali', 'soyad':'aliyev'},
             '2':{'ad':'Mammad','soyad':'Mammadov'}
             }
+
 # hər bir lüğətin necə çap olunduğuna baxaq
 print(nümunə_1, nümunə_2, nümunə_3, nümunə_4)
+
+# lüğətin spesifik elementini listlərdə olduğu kimi indekslər vasitəsilə olmasa da,
+# key-lər vasitəsilə tapmaq olar. Məsələn:
+print(nümunə_1['kitab']) # ekrana book çıxardacaq.
+print(nümunə_4['1']['ad']) # ekrana Ali çıxardacaq.
+
+print("\nKeylər:   " + str(nümunə_3.keys()))   #  
+print("Valuelar: " + str(nümunə_3.values())) # 
+print("İtemlər:  " + str(nümunə_3.items()))  #
 
 print("\nnümunə_1 variable:")
 for açarsöz in nümunə_1.keys():
@@ -85,6 +95,11 @@ Yuxarıdakı kod ekrana aşağıdakı nəticəni çap edəcək:
 
 ```python
 {'maşın': 'car', 'test': 'test', 'kitab': 'book'} {} {'Ali': 1234, 'Mammad': 12345, 'Aziz': 123456, 'Orxan': 'test'} {'1': {'ad': 'Ali', 'soyad': 'aliyev'}, '2': {'ad': 'Mammad', 'soyad': 'Mammadov'}}
+book
+Ali
+Keylər:   dict_keys(['Ali', 'Mammad', 'Aziz', 'Orxan'])
+Valuelar: dict_values([1234, 12345, 123456, 'test'])
+İtemlər:  dict_items([('Ali', 1234), ('Mammad', 12345), ('Aziz', 123456), ('Orxan', 'test')])
 
 nümunə_1 variable:
 maşın->car
@@ -97,4 +112,36 @@ nümunə_4 variable:
 2 ad Mammad
 2 soyad Mammadov
 ```
+
+Başqa bir nümunəyə baxaq:
+
+```python
+example = {'maşın':'car', 'test':'test', 'kitab':'book'}
+# Lüğətin içindəki hər hansı dəyəri aşağıdakı formada dəyişmək mümkündür.
+example['maşın'] = 'car2'
+example['qələm'] = 'pen'
+# Update metodu da həmin işə yararlıdır.
+example.update({"kitab": "book2"})
+example.update({"telefon": "telephone"})
+print(example) # {'maşın': 'car2', 'test': 'test', 'kitab': 'book2', 'qələm': 'pen', 'telefon': 'telephone'}
+
+# popitem vasitəsilə lüğətin son elementini silmək mümkündür
+example.popitem()
+print(example) # {'maşın': 'car2', 'test': 'test', 'kitab': 'book2', 'qələm': 'pen'}
+
+# lüğətin spesifik elementini isə del açar sözü ilə silmək mümkündür
+del example['maşın']
+print(example) # {'test': 'test', 'kitab': 'book2', 'qələm': 'pen'}
+
+example.clear()
+
+# lüğətin içindəki itemləri clear() metodu vasitəsilə silmək mümkündür:
+print(example) # {}
+```
+
+
+
+
+
+
 
