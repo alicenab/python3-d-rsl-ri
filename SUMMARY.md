@@ -27,6 +27,7 @@
 * [Lists](giris/lists.md)
 * [Functions (funksiyalar)](giris/functions.md)
 * [Tuple and dictionary](giris/tuple-and-dictionary.md)
+* [Exception handling (try-except)](giris/exception-handling-try-except.md)
 
 ## Class-lar
 
