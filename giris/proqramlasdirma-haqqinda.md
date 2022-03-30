@@ -11,16 +11,10 @@ Təsəvvür edin ki, müəyyən bir sürətlə müəyyən vaxt ərzində uzun yo
 3\)Məsafəni göstərən rəqəmləri vaxtı göstərən rəqəmlərə bölsək, sürəti göstərən rəqəmləri yaddaşda saxlaya bilərik;\
 4\)Son addım olaraq isə istifadəçiyə əldə etdiyimiz sürəti göstərən rəqəmləri ekrana çıxarmaq lazım olacaq.
 
-
-
 Bu addımlar məqsədimizə çatmaq üçün yazacağımız proqram təminatının **alqoritm**i adlandırıla bilər.
 
 Əlbəttə ki, kompüter sözləri bizim oxuduğumuz formada başa düşməyəcək, bu səbəbdən yazdığımız sözləri kompüterə özünün başa düşə biləcəyi **proqramlaşdırma dili**ndə yazmalıyıq.
 
-
-
 Kompüteri yaxşı təlim keçmiş bir itə bənzətmək mümkündür. O, yalnız özünün başa düşdüyü əmrləri icra edə bilir. Məsələn, _bu iki rəqəmi götür, birincini ikinciyə böl, cavabı ekrana yaz._ İcra edə bildiyi əmrlərin siyahısı **IL (Instruction List)** adlanır.
-
-
 
 Kompüterlərin başa düşdüyü dil insanlar tərəfindən yazılmışdır. Hal-hazırda kompüterlər özləri yeni dil yaratmağa qadir deyillər, lakin inkişaf edən texnologiyalar vasitəsilə gələcəkdə bu hal dəyişə bilər. İnsanlar kimi kompüterlər də bir neçə dildən istifadə edə bilirlər. Bu dillərdən biri **python**-dur. İnsanların istifadə etdiyi dillər **təbii dillər** adlanır **(natural languages).**

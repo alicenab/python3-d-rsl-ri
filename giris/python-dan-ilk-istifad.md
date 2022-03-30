@@ -6,7 +6,7 @@
 python3 -V
 ```
 
-Yükləndiyi halda python3-ün versiyası ekrana yazılacaq.&#x20;
+Yükləndiyi halda python3-ün versiyası ekrana yazılacaq.
 
 Windows istifadə edən şəxslər isə ağlayaraq bu sadəliyi öz gündəliklərinə yaza bilərlər.😛
 
@@ -16,7 +16,7 @@ Windows istifadə edən şəxslər isə ağlayaraq bu sadəliyi öz gündəlikl�
 (bu spesifik olaraq 3.10.3 versiyasının linkidir.)
 {% endembed %}
 
-Python-da kod yazmağa başlamaq üçün iki şeyə ehtiyacınız var: 
+Python-da kod yazmağa başlamaq üçün iki şeyə ehtiyacınız var:
 
 1\) Kodu yazdığınız **editor**-a (notepad, vim, notepad++, visual studio code və s.);
 
@@ -24,11 +24,9 @@ Python-da kod yazmağa başlamaq üçün iki şeyə ehtiyacınız var:
 
 Əlavə olaraq, yazdığınız kodu addım-addım izləyib, hansı mərhələdə kodun necə davrandığını müşahidə etməyinizə kömək edən **debugger**-dən istifadə edə bilərsiniz.
 
-Python3-ü Windows əməliyyat sisteminə quraşdırdığınız vaxt yuxarıda sadalanan bəndlərdəki özəllikləri və debuggeri özündə birləşdirən **IDLE** adında bir alət də yüklənir.&#x20;
+Python3-ü Windows əməliyyat sisteminə quraşdırdığınız vaxt yuxarıda sadalanan bəndlərdəki özəllikləri və debuggeri özündə birləşdirən **IDLE** adında bir alət də yüklənir.
 
-**IDLE**  Integrated Development and Learning Environment sözlərinin birləşməsidir.
-
-
+**IDLE** Integrated Development and Learning Environment sözlərinin birləşməsidir.
 
 Test üçün MacOS əməliyyat sistemində prosesin necə olduğuna baxaq.
 

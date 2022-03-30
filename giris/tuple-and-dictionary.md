@@ -1,6 +1,6 @@
 # Tuple and dictionary
 
-Sequence types və mutability haqqında.
+Sequence types və mutability haqqında, for ilə içində iterate edə bildiyimiz hər bir data tipi sequental data type sayılır. Məsələn listlər. Listlər həm də mutable data type-dır. Yəni proqram işlədiyi müddətdə içi dəyişə bilər. Tuple-lar adətən o zaman istifadə olunurlar ki, hər hansı bir listiniz və s. var onu proqram içində dəyişməsini istəmirsiz. Onu tuple() vasitəsilə tuple-a çevirirsiniz.
 
 For ilə içində iterate edə bildiyimiz hər bir data tipi sequental data type sayılır. Məsələn, listlər. Listlər eyni zamanda mutable data type-dır. Yəni proqram işlədiyi müddətdə içi dəyişə bilər.
 
@@ -31,7 +31,54 @@ print(type(test_2))
 '''
 ```
 
+## Dictionary (lüğətlər)
+
+Dictonary tipinin tuple tipindən fərqi ondadır ki, python 3.6 versiyasından etibarən, dictionary mutable tipdir. Yəni onun hansısa elementini proqramın gedişatı zamanı dəyişdirmək mümkündür. Dictionary-lər key və value-lardan ibarət olurlar. Məsələn aşağıdakı nümunəyə baxaq.
+
 Tuple immutable (dəyişilməz) olduğu üçün aşağıdakı onu aşağıdakı kimi dəyişdirmək xəta çıxardacaq:
+
+```
+luget_1 = {'masin':'car', 'reng':'color', 'telefon':'telephone'}
+
+print(luget_1)
+print(luget_1.keys())
+print(luget_1.values())
+
+# lugetin key-inin silinmesi onunla bagli olan value-nun da silinmesine getirib cixarir.
+
+del luget_1['reng']
+print(luget_1)
+
+# lugetin son elementini popitem() vasitesile silmek mumkundur.
+
+luget_1.popitem()
+print(luget_1)
+
+# update vasitesile lugeti update etmek mumkundur
+luget_1.update({'ses':'voice'})
+print(luget_1)
+
+luget_2 = luget_1.copy()
+luget_2.clear()
+
+print()
+print(luget_1)
+print(luget_2)
+```
+
+Yuxarıdakı kod parçası ekrana aşağıdakı nəticələri çap edəcəkdir.
+
+```
+{'masin': 'car', 'reng': 'color', 'telefon': 'telephone'}
+dict_keys(['masin', 'reng', 'telefon'])
+dict_values(['car', 'color', 'telephone'])
+{'masin': 'car', 'telefon': 'telephone'}
+{'masin': 'car'}
+{'masin': 'car', 'ses': 'voice'}
+
+{'masin': 'car', 'ses': 'voice'}
+{}
+```
 
 ```
 my_tuple.append(123)
