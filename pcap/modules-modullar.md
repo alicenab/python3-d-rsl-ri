@@ -164,7 +164,7 @@ for i in range(10):
 
 #### choice() və sample() funksiyaları
 
-Bu funksiyalar əldə olan siyahıdan təsadüfi verilənləri seçmək üçün istifadə olunur. choice() funksiyası vasitəsiləMəsələn:
+Bu funksiyalar əldə olan siyahıdan təsadüfi verilənləri seçmək üçün istifadə olunur. choice() funksiyası vasitəsilə empty olmuyan bir siyahıdan təsadüfi bir elementi seçmək mümkündür. sample() funksiyası vasitəsilə isə empty olmayan funksidan istədiyimiz qədər təsadüfi element seçə bilərik. Məsələn:
 
 ```
 from random import sample
@@ -176,4 +176,31 @@ my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 print(choice(my_list))    # 5
 print(sample(my_list, 10))#[3, 5, 2, 1, 4, 6, 7, 8, 9, 10]
 ```
+
+### platform modulu
+
+#### platform() funksiyası
+
+
+
+```
+from platform import platform
+
+# Alias true olduqda daha umumi informasiya vermeye calisir.
+# terse true olduqda minimum informasiya vermeye calisir.
+
+print(platform(aliased=True, terse=True))
+print(platform(aliased=True, terse=False))
+print(platform(aliased=False, terse=True))
+print(platform(aliased=False, terse=False))
+print()
+# 0 ve 1 parametrlerini de funksiyaya oturmek mumkundur.
+print(platform())
+print(platform(1))
+print(platform(0, 1))
+```
+
+
+
+
 
