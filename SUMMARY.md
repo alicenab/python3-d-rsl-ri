@@ -33,6 +33,7 @@
 ## 🤩 PCAP
 
 * [Modules (modullar)](pcap/modules-modullar.md)
+* [Packages](pcap/packages.md)
 
 ## Class-lar
 

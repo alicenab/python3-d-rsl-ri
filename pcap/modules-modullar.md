@@ -112,6 +112,50 @@ print(dir(math))
 # ['__doc__', '__loader__', '__name__', '__package__', '__spec__', 'acos', 'acosh', 'asin', 'asinh', 'atan', 'atan2', 'atanh', 'ceil', 'comb', 'copysign', 'cos', 'cosh', 'degrees', 'dist', 'e', 'erf', 'erfc', 'exp', 'expm1', 'fabs', 'factorial', 'floor', 'fmod', 'frexp', 'fsum', 'gamma', 'gcd', 'hypot', 'inf', 'isclose', 'isfinite', 'isinf', 'isnan', 'isqrt', 'lcm', 'ldexp', 'lgamma', 'log', 'log10', 'log1p', 'log2', 'modf', 'nan', 'nextafter', 'perm', 'pi', 'pow', 'prod', 'radians', 'remainder', 'sin', 'sinh', 'sqrt', 'tan', 'tanh', 'tau', 'trunc', 'ulp']
 ```
 
+### math modulu
+
+#### riyazi funksiyalar
+
+```python
+from math import pi, radians, degrees, sin, cos, tan, asin
+
+ad = 90
+ar = radians(ad)
+ad = degrees(ar)
+
+print(ad == 90.)                    # True
+print(ar == pi / 2.)                # True
+print(sin(ar) / cos(ar) == tan(ar)) # True
+print(asin(sin(ar)) == ar)          # True
+```
+
+Sadalananlardan başqa, math modulunun aşağıdakı metodları da mövcuddur:
+
+pow() built-in funksiyadır və math-dan import edilməyə ehtiyacı yoxdur.
+
+```
+asin(x) → the arcsine of x;
+acos(x) → the arccosine of x;
+atan(x) → the arctangent of x.
+sinh(x) → the hyperbolic sine;
+cosh(x) → the hyperbolic cosine;
+tanh(x) → the hyperbolic tangent;
+asinh(x) → the hyperbolic arcsine;
+acosh(x) → the hyperbolic arccosine;
+atanh(x) → the hyperbolic arctangent.
+e → a constant with a value that is an approximation of Euler's number (e)
+exp(x) → finding the value of ex;
+log(x) → the natural logarithm of x
+log(x, b) → the logarithm of x to base b
+log10(x) → the decimal logarithm of x (more precise than log(x, 10))
+log2(x) → the binary logarithm of x (more precise than log(x, 2))
+ceil(x) → the ceiling of x (the smallest integer greater than or equal to x)
+floor(x) → the floor of x (the largest integer less than or equal to x)
+trunc(x) → the value of x truncated to an integer (be careful - it's not an equivalent either of ceil or floor)
+factorial(x) → returns x! (x has to be an integral and not a negative)
+hypot(x, y) → returns the length of the hypotenuse of a right-angle triangle with the leg lengths equal to x and y (the same as sqrt(pow(x, 2) + pow(y, 2)) but more precise)
+```
+
 ### random modulu
 
 Random modulu təsadüfi ədədlərin yaradılması üçün istifadə edilir.
@@ -181,7 +225,7 @@ print(sample(my_list, 10))#[3, 5, 2, 1, 4, 6, 7, 8, 9, 10]
 
 #### platform() funksiyası
 
-
+platform() funksiyası avadanlığın xüsusiyyətləri, əməliyyat sistemi və interpreter-in versiyası kimi bir neçə məlumatı ekrana çıxarır.
 
 ```
 from platform import platform
@@ -198,9 +242,57 @@ print()
 print(platform())
 print(platform(1))
 print(platform(0, 1))
+
+#Ekrana cap olunacaq:
+#Linux-5.17.9-300.fc36.x86_64-x86_64-with-glibc2.35
+```
+
+#### machine() funksiyası
+
+machine() əməliyyat sisteminin istifadə etdiyi prosessorun ümumi versiyasını ekrana çıxarır (x86\_64 vəya x86)
+
+#### processor() funksiyası
+
+processor() funksiyası mümkün olduğu halda prosessorun əsl tam adını qaytarır.
+
+#### system() funksiyası
+
+system() funksiyası əməliyyat sisteminin adını string olaraq qaytarır
+
+#### version() funksiyası
+
+version() funksiyası əməliyyat sisteminin versiyasını string olaraq qaytarır
+
+```
+from platform import machine
+from platform import processor
+from platform import system
+from platform import version
+
+print(machine())   #x86_64
+print(processor()) #Intel(R) Core(TM) i3-2330M CPU @ 2.20GHz
+print(system())    #Linux
+print(version())   #1 SMP Debian 4.4.6-1+rpi14 (2016-05-05)
+```
+
+#### python\_implementation() və python\_version\_tuple() funksiyaları
+
+python\_implementation() funksiyası pythonun hansı implementasiyasından istifadə etdiyiniz haqqında məlumat verir.
+
+python\_version\_tuple() funksiyası quraşdırılmış python-un əsas(major) versiyası, köməkçi(minor) versiyası və patch leveli haqqında məlumat verir. Məsələn:
+
+```
+from platform import python_implementation, python_version_tuple
+
+print(python_implementation())       # CPython
+
+for atr in python_version_tuple():
+    print(atr,end=' ')               # 3 10 4
 ```
 
 
 
 
+
+&#x20;
 
