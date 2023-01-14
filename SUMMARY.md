@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Əsas səhifə](README.md)
+* [Python dərsləri](README.md)
 
 ## 👶 PCEP
 

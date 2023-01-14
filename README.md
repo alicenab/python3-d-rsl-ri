@@ -1,4 +1,8 @@
-# Əsas səhifə
+---
+description: python telimi ve python kursu-na getmeye ehtiyac yoxdur.
+---
 
-Özüm 4 gün ərzində hazırlaşaraq PCEP imtahanından keçib sertifikatını aldım. İngilis dili zəif olan şəxslərçün bu prosesi dokumentasiya etməyə çalışdım.\
-Ümid edirəm ki, sizin üçün faydalı olacaq.
+# Python dərsləri
+
+\
+Python telimi ve python kursu ucun pul xerclemeye ehtiyac yoxdur. Ingilis dili zeif olan yoldaslar ucun bu resursu hazirlamisam. Umid edirem ki faydasi toxunacaq.&#x20;
