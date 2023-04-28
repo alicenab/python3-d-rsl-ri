@@ -7,10 +7,10 @@ description: >-
 
 # Class-ların yaradılması
 
-Nəyə görə class-ları işlədirik? Class-lar bizə data və funksiyaları məntiqi şəkildə qruplaşdırmağa imkan verir. Mən onları müvafiq olaraq attribute və method adlandıracağam. 
+Nəyə görə class-ları işlədirik? Class-lar bizə data və funksiyaları məntiqi şəkildə qruplaşdırmağa imkan verir. Mən onları müvafiq olaraq attribute və method adlandıracağam.&#x20;
 
-Method - class içində təyin etdiyimiz funksiyalar method adlanır.  
-Attribute - classa aid olan dəyişənlər attribute adlanır  
+Method - class içində təyin etdiyimiz funksiyalar method adlanır.\
+Attribute - classa aid olan dəyişənlər attribute adlanır\
 Instance - class-dan törəyən object
 
 Tutaq ki, şirkətdəki işçiləri əks etdirən bir tətbiq yazmalıyıq. Hər işçinin adı, emaili və görə bildiyi işlər var. Hər işçini ayrı ayrı kodlamaq həm kod sətiri həm də vaxt baxımından əziyyət olardı. Buna görə işçi adında bir qəlib yaradıb, hər işçini o qəlibə uyğun kodlamaq daha sərfəlidir. Bu halda hər bir işçinin öz methodu və attribute-u olacaq.
@@ -50,7 +50,7 @@ Gördüyünüz kimi, hər instance-ın özünə aid yaddaşda yeri var və tipi 
 
 Gəlin `emp_1` və `emp_2` yə bəzi instance dəyişənləri təyin edək.
 
- 
+&#x20;
 
 ```python
 class Employee:
@@ -78,9 +78,9 @@ print(emp_2.email) # Mammad2.Mammadov2@email.com
 
 İki işçinin informasiyasını əl vasitəsi ilə daxil etmək çətin və uzun olur, hər dəfə instance yaradılanda bu məlumatın avtomatik daxil olunmasını təmin etmək gözəl fikir olardı. Bunun üçün əsas class-ımızın içində `__init__` method-unu istifadə etməliyik.
 
-Əgər əvvəlcədən başqa dil bilirdinizsə, sizə asan olması üçün `__init__`in bir constructor olduğunu deməliyəm. Əgər python sizin öyrəndiyiniz ilk dildirsə, `__init__` -i aşağıda izah etdiyim kimi anlaya bilərsiniz.
+Əgər əvvəlcədən başqa dil bilirdinizsə, sizə asan olması üçün `__init__`in bir constructor olduğunu deməliyəm. Bu funksiya bizə imkan verir ki, hər dəfə yeni funksiya çağırılanda yeni bir obyekt yaransın. Əgər python sizin öyrəndiyiniz ilk dildirsə, `__init__` -i aşağıda izah etdiyim kimi anlaya bilərsiniz.
 
-`__init__` initialize \(initial=ilkin\) sözünün qısaltmasıdır.   
+`__init__` initialize (initial=ilkin) sözünün qısaltmasıdır. \
 Əgər bir classda `__init__` metodunu istifadə etsək, həmin classın bütün instance-ları `__init__` metodunun içindəki attribute-lara sahib olacaq.
 
 `__init__` instace təyin edən zaman class-ın içində işə düşən ilk method-dur.
@@ -102,7 +102,7 @@ print(emp_2.iemail) # Mammad2.Mammadov2@email.com
 
 Gördüyünüz kimi 21 sətirlik bir koddan 9 sətirlik bir koda düşdük.
 
-ad, soyad, maas və email bizim class-ımızın attribute-ları idi. Ancaq biz class-a həmçinin bəzi funksionallıqları da əlavə etmək istəyirik. Deməli class-a method yazacayıq. Tutaq ki, işçilərin ad və soyadlarını \(yəni fullname-i\) göstərən bir method-a ehtiyacımız var. Praktiki olaraq bunu çox sadə şəkildə bu cür həll edə bilərik:
+ad, soyad, maas və email bizim class-ımızın attribute-ları idi. Ancaq biz class-a həmçinin bəzi funksionallıqları da əlavə etmək istəyirik. Deməli class-a method yazacayıq. Tutaq ki, işçilərin ad və soyadlarını (yəni fullname-i) göstərən bir method-a ehtiyacımız var. Praktiki olaraq bunu çox sadə şəkildə bu cür həll edə bilərik:
 
 ```python
 class Employee:
@@ -143,7 +143,7 @@ print(emp_1.fullname()) # Mammad Mamamadov
 print(emp_2.fullname()) # Mammad2 Mammadov2
 ```
 
- 8-ci sətiri belə fikirləşin 
+&#x20;8-ci sətiri belə fikirləşin&#x20;
 
 ```python
     def fullname()
@@ -153,15 +153,14 @@ print(emp_2.fullname()) # Mammad2 Mammadov2
 
 `fullname() takes 0 positional arguments but 1 was given`
 
-Axı biz `fullname()` method-unda nə `self` arqumentini nə də başqa bir argumenti təyin etməmişik? necə olur ki errorda deyir `1 was given`? 
+Axı biz `fullname()` method-unda nə `self` arqumentini nə də başqa bir argumenti təyin etməmişik? necə olur ki errorda deyir `1 was given`?&#x20;
 
-Bu ona görədir ki, class-ın içində bir method yazığımızda, həmin method biz yazsaq da yazmasaq da avtomatik olaraq instance-ı ilk arqument kimi qəbul edir.  
+Bu ona görədir ki, class-ın içində bir method yazığımızda, həmin method biz yazsaq da yazmasaq da avtomatik olaraq instance-ı ilk arqument kimi qəbul edir. &#x20;
 
 Yəni `print(emp_1.fullname())` yazdığımızda, `emp_1` dəyərini avtomatik olaraq `fullname(emp_1)` -a atır. Ona görə də `self` yazmaq mütləqdir.
 
 Başqa bir deyişlə, `emp_1.fullname()` yazdığımızda, python yazdığımızı `Employee.fullname(emp_1)` -ə çevirir. `emp_1`-i isə `self`ə class-ın içindəki method-da self yazmadığımızda  Aşağıdaki erroru verir:`fullname() takes 0 positional arguments but 1 was given`
 
 {% hint style="info" %}
-`self` class içindəki method içindəki bir  argument-dir, `self` bir keyword deyil. Siz başqa bir ad da istifadə edə bilərsiniz. Ancaq kodun oxunabilirliyini artırmaq məqsədi ilə `self` istifadə etmək məsləhət görülür. 
+`self` class içindəki method içindəki bir  argument-dir, `self` bir keyword deyil. Siz başqa bir ad da istifadə edə bilərsiniz. Ancaq kodun oxunabilirliyini artırmaq məqsədi ilə `self` istifadə etmək məsləhət görülür.&#x20;
 {% endhint %}
-
